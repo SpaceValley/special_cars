@@ -1,0 +1,2395 @@
+@import 'media'
+@import "colors"
+@import "variables"
+
+body
+  margin: 0
+  padding: 0
+  overflow-x: hidden
+  font-size: calc(1rem + ((1vw - 3.2px) * 0))
+
+// Home page
+.page-header,
+.home-page-header
+  @extend %flex-column-center
+
+.home-page-header
+  margin-top: -3.47rem
+
+.top-header-wrap
+  @extend %flex-row-fe
+  background: $page-header
+  color: $text-white
+  width: 100%
+  flex-direction: column
+  padding-top: 0.5em
+  z-index: 30
+  position: relative
+  @include large
+    flex-direction: row
+    padding-top: 0
+
+.top-header-small-wrap
+  padding-bottom: 3.5em
+  @include large
+    padding-bottom: 0
+
+
+
+.header-info
+  font-family: 'Blinker', sans-serif
+  margin: 0
+  font-size: 1em
+  letter-spacing: 0.32px
+  font-weight: 400
+  @include large
+    font-size: 1em
+    letter-spacing: 0.32px
+    font-weight: 400
+    margin-right: 2.5em
+
+.header-vertical-line
+  margin: 0 0.625em
+
+.header-language-icons-wrap
+  @extend %flex-row-center
+
+.language-picked
+  @extend %flex-row-center
+  font-family: 'Blinker', sans-serif
+  margin: 0
+  cursor: pointer
+  font-size: 1em
+  letter-spacing: 0.32px
+  font-weight: 200
+  @include large
+    font-size: 1em
+    letter-spacing: 0.32px
+    font-weight: 200
+
+
+
+.lang-label-img
+  margin-right: 0.625em
+
+.header-language-dropdown
+  @extend %flex-column-center
+  position: absolute
+  list-style-type: none
+  margin: 0
+  padding: 0
+  transition: all .3s ease
+  visibility: hidden
+  opacity: 0
+  top: 4.21em
+  right: calc(1rem + 44vw)
+  cursor: pointer
+  @include xsmall
+    right: calc(1rem + 47vw)
+  @include xmedium
+      right: calc(1rem + 48vw)
+  @include large
+    top: 2.53em
+    right: 5.6em
+  li
+    @extend %flex-row-fs
+    width: 100%
+    padding: 0.625em 0.5em
+    background: $page-header
+    &:hover
+      background: $header-lang-hover
+      cursor: pointer
+
+
+.opened
+  visibility: visible
+  opacity: 1
+  z-index: 500
+
+
+.header-language-dropdown-item
+  font-family: 'Blinker', sans-serif
+  margin: 0
+  font-size: 1em
+  font-weight: 400
+  @include large
+    font-size: 1em
+    font-weight: 400
+
+.header-contact-icons-wrap
+  @extend %flex-row-center
+  margin-left: 1.25em
+  @include large
+    margin-left: 1.25em
+
+.header-contact-icon
+  padding: 0.5625em
+  &:hover
+    background: $header-contact-hover
+    cursor: pointer
+
+.bottom-header-wrap
+  @extend %flex-row-center
+  position: absolute
+  width: 100%
+  top: 4.2em
+  z-index: 20
+  @include large
+    top: 2.5625em
+
+.hide-main-header
+  display: none!important
+
+.header-bg-fade-wrap
+  z-index: 10
+  width: 100%
+  height: 4em
+  position: absolute
+  top: 0
+  @include xsmall
+    height: 5em
+  @include xmedium
+    height: 8em
+  @include large
+    height: 12.875em
+    position: absolute
+  @include xlarge
+    height: 22.875em
+
+
+.header-bg-fade,
+.header-menu-logo,
+.header-menu-logo-sm,
+.mobile-menu-icon,
+.service-card-img,
+.our-cars-section-label,
+.footer-section-logo
+  width: 100%
+  height: 100%
+
+.header-menu-logo
+  background-image: url("../img/home/special-cars-logo-header-sticky.png")
+  background-repeat: no-repeat
+  background-size: cover
+  @include large
+    background-image: url("../img/home/special-cars-logo-header.png")
+
+.header-menu-logo-sm
+  background-image: url("../img/home/special-cars-logo-header-sticky.png")
+  background-repeat: no-repeat
+  background-size: cover
+
+.small-header-menu-wrap
+  background: $references-section-info-bg
+
+.header-menu-wrap,
+.header-menu-wrap-mobile
+  @extend %flex-row-center
+  margin: 0
+  padding: 0
+  z-index: 100
+  width: 100%
+  list-style-type: none
+  padding-top: 0.5em
+  padding-bottom: 0.5em
+
+.header-menu-wrap-mobile,
+.header-menu-wrap-mobile-sticky
+  @extend %flex-column-center
+  background: $header-menu-wrap-mobile-bg
+  width: 8em
+  padding: 1em
+  z-index: 250
+  position: fixed
+  right: 0
+  top: 7.7em
+  visibility: hidden
+  opacity: 0
+  cursor: pointer
+  list-style-type: none
+  margin: 0
+
+
+
+.menu-opened
+  visibility: visible
+  opacity: 1
+  z-index: 300
+
+.menu-sticky
+  top: 3.53em!important
+
+.small-header-menu-wrap
+  position: absolute
+  top: 4.28em
+  z-index: 120
+  @include large
+    top: 2.59em
+
+.sticky-top
+  position: fixed!important
+  top: 0!important
+
+.sticky-header-nav-wrap
+  position: sticky
+  top: 0
+  z-index: 20
+  @extend %flex-row-center
+  margin: 0
+  padding: 0
+  list-style-type: none
+  width: 100%
+  background: $references-section-info-bg
+
+.header-sticky-menu-wrap
+  @extend %flex-row-center
+  margin: 0
+  padding: 0
+  z-index: 20
+  width: 100%
+  list-style-type: none
+  padding-top: 0.5em
+  padding-bottom: 0.5em
+
+.mobile-menu-icon-wrap,
+.mobile-menu-icon-wrap-sticky
+  position: absolute
+  width: 2em
+  height: 2em
+  right: 1em
+  cursor: pointer
+  @include large
+    display: none
+
+
+.header-menu-item
+  color: $text-white
+  font-family: 'Blinker', sans-serif
+  font-size: 1.0625em
+  font-weight: 400
+  text-transform: uppercase
+  letter-spacing: 3.4px
+  margin: 0 1em
+  display: none
+  &:hover
+    color: $owl-dot-active
+  @include large
+    display: block
+    font-size: .9em
+    font-weight: 400
+    letter-spacing: 3.4px
+    margin: 0 1em
+  @include xlarge
+    margin: 0 1.5625em
+    font-size: 1.0625em
+
+
+.header-menu-item a
+  text-decoration: none
+  color: inherit
+
+.header-menu-item-mobile
+  color: $text-white
+  font-family: 'Blinker', sans-serif
+  font-size: .9em
+  font-weight: 400
+  text-transform: uppercase
+  letter-spacing: 3.4px
+  margin: 0 1em 1em
+  cursor: pointer
+  &:hover
+    color: $owl-dot-active
+
+.header-menu-item-mobile a
+  text-decoration: none
+  color: inherit
+.header-menu-logo-wrap
+  width: 2.25em
+  height: 2.5em
+  margin: 0
+  @include large
+    width: 11.875em
+    height: 7.813em
+    margin: 0 2.1875em
+  @include xlarge
+    width: 15.875em
+    height: 9.8125em
+
+.header-menu-logo-wrap-sm
+  width: 2.25em
+  height: 2.5em
+  margin: 0 9em
+  a
+    outline: none
+
+.popup-mail-icon-wrap,
+.popup-car-icon-wrap
+  position: fixed
+  right: 0
+  z-index: 15
+  cursor: pointer
+
+.popup-mail-icon-wrap
+  top: 10.8em
+  @include xsmall
+    top: 13.5em
+  @include xmedium
+    top: 19.5em
+  @include large
+    top: 20.3125em
+  @include xlarge
+    top: 32.313em
+  a
+    text-decoration: none
+
+.popup-car-icon-wrap
+  top: 13.2em
+  @include xsmall
+    top: 16em
+  @include xmedium
+    top: 22em
+  @include large
+    top: 23.5em
+  @include xlarge
+    top: 35.3em
+
+.popup-icon-wrap
+  @extend %flex-column-center
+  width: 2em
+  height: 2em
+  background: $owl-dot-active
+  cursor: pointer
+  @include large
+    width: 2.5em
+    height: 2.5em
+
+.popup-text
+  color: $text-white
+  font-family: 'Blinker', sans-serif
+  font-size: .9em
+  font-weight: 400
+  margin: 0
+  line-height: 1
+
+
+
+.popup-line-wrap
+  @extend %flex-row-fs
+  background-color: $popup-btn
+  margin-bottom: 0.625em
+  &:hover
+    .show-transition
+      padding-left: 1em
+      width: 11.375em
+
+.show-transition
+  width: 0
+  transition: .3s width ease-in-out
+
+.owl-stage
+  display: -webkit-box
+  display: -moz-box
+
+.owl-item
+  display: inline !important
+
+.owl-carousel
+  display: block!important
+
+.header-slider
+  width: 100%
+  height: auto
+  .slide
+    width: 100%
+    background-image: url("../img/home/special-cars-home-slider-1.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    height: 8.875em
+    @include xsmall
+      height: 11.875em
+    @include xmedium
+      height: 17.875em
+    @include large
+      height: 28.875em
+    @include xlarge
+      height: 38.875em
+    @include xxxlarge
+      height: 46.875em
+
+  .nav-btn
+    color: $text-white
+    font-family: Blinker, sans-serif
+    font-size: 1.6875em
+    font-weight: 400
+
+  .owl-nav button
+    position: absolute
+    z-index: 150
+    margin: 0
+    border: none
+    background: none
+    color: $text-white
+    font-family: Blinker, sans-serif
+    font-size: 1.6875em
+    font-weight: 400
+    padding: 0.52em
+    top: 1.5em
+    @include xsmall
+      top: 2.25em
+    @include xmedium
+      top: 4em
+    @include large
+      top: 6.5em
+    @include xlarge
+      top: 13.1em
+
+
+
+  .owl-nav button.owl-prev
+    left: 0
+
+  .owl-nav button.owl-next
+    right: 0
+
+  .owl-dots
+    width: 100%
+    @extend %flex-row-center
+    position: absolute
+    bottom: 0
+    @include large
+      bottom: 17px
+
+  .owl-dots button.owl-dot
+    width: 9px
+    height: 9px
+    display: inline-block
+    background: $owl-dot
+    border: none
+    margin: 0 5px
+    padding: 0
+    transform: rotate(45deg)
+    cursor: pointer
+
+  .owl-dots button.owl-dot.active
+    background: $owl-dot-active
+
+
+  .owl-dots button.owl-dot:focus
+    outline: none
+
+.about-section
+  @extend %flex-column-center
+  background: $about-section-bg
+  position: relative
+  padding-top: 4.375em
+  padding-bottom: 9.25em
+  @include medium
+    padding-bottom: 15.25em
+  @include large
+    padding-top: 4.375em
+    padding-bottom: 15.25em
+
+
+.about-section-info-wrap
+  width: 17.1875em
+  margin-bottom: 3.4375em
+  @include medium
+    width: 32.1875em
+  @include large
+    width: 50.1875em
+    margin-bottom: 4.9375em
+  @include xlarge
+    width: 72.1875em
+    margin-bottom: 4.5em
+
+.author-text,
+.service-section-title,
+.questions-section-info-card-title,
+.references-section-title,
+.about-page-author-title,
+.buy-car-popup-title
+  color: $text-white
+  font-family: Blinker, sans-serif
+  font-weight: 200
+  font-size: 1.6em
+  margin-top: 0
+  margin-bottom: 0.43em
+  @include large
+    font-size: 2em
+    margin-top: 0
+    margin-bottom: 0.43em
+  @include xlarge
+    font-size: 2.625em
+
+
+
+.author-label
+  color: $owl-dot-active
+  font-family: Raleway, sans-serif
+  font-weight: 400
+  margin: 0
+  font-size: 1em
+
+
+.about-section-underline,
+.about-section-card-underline,
+.questions-section-info-card-underline
+  width: 1.25rem
+  height: 2px
+  background: $owl-dot-active
+  margin-top: 1.1875em
+  margin-bottom: 0.6875em
+  @include large
+    margin-top: 2.1875em
+    margin-bottom: 1.6875em
+
+.about-section-text,
+.about-card-text,
+.questions-section-info-card-text,
+.service-card-text,
+.questions-section-contact-info-text
+  color: $about-section-text
+  font-family: Raleway, sans-serif
+  font-weight: 400
+  margin: 0
+  font-size: .8em
+  line-height: 2
+  @include large
+    font-size: .9em
+    line-height: 2
+  @include xlarge
+    font-size: 1em
+
+.about-section-cards-wrap
+  @extend %flex-row-center-fs
+  z-index: 10
+  flex-direction: column
+  @include medium
+    flex-wrap: wrap
+    flex-direction: row
+  @include large
+    flex-direction: row
+
+.about-section-card,
+.buy-section-card
+  box-shadow: 0 0 70px $about-card-box-shadow
+  background-color: $about-section-bg
+  position: relative
+  padding: 10.3125em 1em 1.9375em
+  width: 15em
+  margin-left: 0.5em
+  margin-right: 0.5em
+  margin-bottom: 1.5em
+  @include medium
+    width: 17em
+    padding: 13.3125em 1em 1.9375em
+  @include large
+    margin: 0.5em
+  @include xlarge
+    padding: 16.3125em 1.5625em 1.9375em
+    width: 20em
+    margin: 0.9375em
+
+
+.about-section-card-bg-image-wrap
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 14.25em
+  @include medium
+    height: 17.25em
+  @include xlarge
+    height: 20.25em
+
+.about-section-first-card-img,
+.about-section-second-card-img,
+.about-section-third-card-img
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+
+.about-section-first-card-img
+  background-image: url("../img/home/special-cars-fahrzeuge.png")
+
+.about-section-second-card-img
+  background-image: url("../img/home/special-cars-ueber-uns.png")
+
+.about-section-third-card-img
+  background-image: url("../img/home/special-cars-service.png")
+
+.about-card-title,
+.buy-card-title
+  color: $text-white
+  font-family: Blinker, sans-serif
+  font-weight: 200
+  margin: 0
+  font-size: 1.8em
+  z-index: 10
+  position: relative
+  @include large
+    font-size: 1.8em
+  @include xlarge
+    font-size: 2.375em
+
+.about-section-card-underline
+  margin-top: 1.5em
+  margin-bottom: 1.25em
+  z-index: 10
+  position: relative
+  @include large
+    margin-top: 1.5em
+    margin-bottom: 1.25em
+
+.about-card-text
+  font-family: Raleway, sans-serif
+  margin: 0
+  font-size: 0.83em
+  margin-bottom: 2em
+  line-height: 2.1
+  z-index: 10
+  position: relative
+  @include large
+    font-size: 0.83em
+    margin-bottom: 2em
+    line-height: 1.8
+  @include xlarge
+    font-size: 1em
+
+
+.about-card-text-white
+  color: $text-white
+  word-break: break-all
+
+
+.about-card-btn,
+.service-section-btn,
+.references-section-btn,
+.questions-section-info-card-btn
+  background: $owl-dot-active
+  color: $text-white
+  font-family: Raleway, sans-serif
+  font-weight: 500
+  text-transform: uppercase
+  letter-spacing: 1.12px
+  border: none
+  font-size: 0.7em
+  padding: 1em 2em 1.125em
+  cursor: pointer
+  &:hover
+    background: $btn-hover
+  @include xxlarge
+    font-size: 0.875em
+
+.about-section-bottom-bg-wrap
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  background-image: url("../img/home/special-cars-hintergrund-1.jpg")
+
+.about-section-bottom-bg-wrap,
+.questions-section-bottom-bg-wrap
+  width: 100%
+  position: absolute
+  bottom: 0
+  z-index: 1
+  height: 9.6875em
+  @include medium
+    height: 11.6875em
+  @include xmedium
+    height: 14.6875em
+  @include large
+    height: 40.6875em
+
+
+.service-section
+  @extend %flex-column-center
+  background: $about-section-bg
+  padding-top: 3.5625em
+  padding-bottom: 4.25em
+  @include large
+    padding-top: 6.5625em
+    padding-bottom: 5.25em
+
+.service-section-content-wrap,
+.references-section-info-wrap
+  @extend %flex-column-fs
+  align-items: center
+  @include large
+    align-items: flex-start
+
+.service-section-title-wrap
+  width: 17.1em
+  @include medium
+    width: 32.1em
+  @include large
+    width: auto
+
+.service-section-title
+  @include large
+    margin: 0
+
+.service-cards-wrap
+  @extend %flex-row-sb-fs
+  margin-top: 2.0625em
+  width: 17.1em
+  flex-direction: column
+  @include medium
+    flex-wrap: wrap
+    flex-direction: row
+    justify-content: space-evenly
+    width: 100%
+  @include large
+    justify-content: space-between
+    margin-top: 2.0625em
+    width: 59.1em
+  @include xlarge
+    width: 71.625em
+
+.service-card
+  width: 100%
+  height: auto
+  @extend %flex-column-center
+  @include medium
+    width: 18em
+  @include large
+    width: 14.3125em
+    align-items: flex-start
+  @include xlarge
+    width: 15.3125em
+
+.service-card-img-wrap
+  width: 5.375em
+  height: 5.375em
+  margin-bottom: 1.375em
+  @include large
+    width: 5.375em
+    height: 5.375em
+    margin-bottom: 1.375em
+
+.service-card-label
+  font-family: Raleway, sans-serif
+  color: $owl-dot-active
+  font-size: 1em
+  margin-top: 0
+  margin-bottom: 1.5625em
+  @include large
+    font-size: 1em
+    margin-top: 0
+    margin-bottom: 1.5625em
+
+.service-card-title
+  color: $text-white
+  font-family: Blinker, sans-serif
+  font-weight: 200
+  font-size: 1.5em
+  margin-top: 0
+  margin-bottom: 1.1em
+  text-align: center
+  @include large
+    text-align: unset
+    font-size: 1.5em
+    margin-top: 0
+    margin-bottom: 1.1em
+  @include xlarge
+    font-size: 1.75em
+
+.service-card-text
+  color: $about-section-text
+  margin-bottom: 2em
+  text-align: center
+  @include large
+    text-align: unset
+    margin-bottom: 2em
+  @include xlarge
+    margin-bottom: 3.625em
+
+.service-section-btn
+  padding: 1em 4.37em 1.125em
+  @include large
+    padding: 1em 4.37em 1.125em
+
+.references-section
+  @extend %flex-column-center
+  background-image: url("../img/home/special-cars-hintergrund-2.jpg")
+  background-size: cover
+  background-repeat: no-repeat
+  padding-top: 3.5em
+  padding-bottom: 3.9375em
+  background-position: center
+  background-attachment: fixed
+  @include large
+    padding-top: 10.5em
+    padding-bottom: 10.9375em
+
+.references-section-info-wrap
+  @include medium
+    align-items: flex-start
+
+.references-section-info
+  background: $references-section-info-bg
+  padding: 1.4375em 0.8125em 1.625em 0.9375em
+  margin-bottom: 1.5625em
+  width: 16.35em
+  @include medium
+    width: 25.5em
+  @include large
+    padding: 1.4375em 1.8125em 2.625em 1.9375em
+    margin-bottom: 1.5625em
+    width: 55.35em
+  @include xlarge
+    width: 59.35em
+
+.references-section-title
+  font-size: 1.4em
+  @include large
+    font-size: 2em
+  @include xlarge
+    font-size: 2.625em
+
+.references-section-btn
+  padding: 1em 2.57em 1.125em
+  @include large
+    padding: 1em 2.57em 1.125em
+
+.questions-section
+  position: relative
+  background: $about-section-bg
+  @extend %flex-column-center
+  padding-top: 1em
+  padding-bottom: 5.75em
+  @include large
+    padding-top: 5em
+    padding-bottom: 6.75em
+
+.questions-section-info-wrap
+  @extend %flex-row-sb-fs
+  z-index: 10
+  width: 17.1em
+  margin-bottom: 3em
+  flex-direction: column
+  @include medium
+    width: 32.1em
+  @include large
+    flex-direction: row
+    width: 59.1em
+    margin-bottom: 7.9375em
+  @include xxlarge
+    width: 72.9375em
+    margin-bottom: 10.9375em
+
+
+.questions-section-info-card
+  width: 15.9375em
+  margin-top: 1.25em
+  @include medium
+    width: 30.9375em
+  @include large
+    width: 24.9375em
+    margin-top: 1.25em
+
+.questions-section-info-img-wrap
+  width: 100%
+  height: 10.6875em
+  margin-top: 3em
+  background-image: url("../img/home/special-cars-auto-verkaufen.png")
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  @include medium
+    width: 28em
+    height: 15.6875em
+    margin-left: 4em
+  @include large
+    width: 36.125em
+    height: 20.6875em
+    margin-top: 0
+    margin-left: 0
+  @include xlarge
+    width: 43.125em
+    height: 24.6875em
+
+.questions-section-info-card-title
+  margin-bottom: 0
+
+.questions-section-info-card-text
+  margin-bottom: 2.625em
+  line-height: 1.6
+  @include large
+    margin-bottom: 2.625em
+    line-height: 1.6
+
+.questions-section-info-card-btn
+  padding: .9em 3.19em .96em
+  @include large
+    padding: .9em 3.19em .96em
+
+.questions-section-contact-info-wrap
+  @extend %flex-row-fe
+  z-index: 10
+  width: 17.1em
+  margin-bottom: 0
+  @include medium
+    width: 30.1em
+  @include large
+    width: 59.1em
+    margin-bottom: 0
+  @include xxlarge
+    width: 72.9375em
+
+
+.questions-section-contact-info
+  background: $references-section-info-bg
+  padding: 1.4375em 1.5625em 1.375em 1.4375em
+  @include large
+    padding: 1.4375em 3.5625em 1.375em 1.4375em
+
+.questions-section-info-card-underline
+  margin-top: 1.25em
+  margin-bottom: 1.25em
+  @include large
+    margin-top: 1.25em
+    margin-bottom: 1.25em
+
+.questions-section-contact-info-text
+  color: $text-white
+  font-weight: 300
+  line-height: 1.7
+
+.questions-section-contact
+  font-family: Raleway, sans-serif
+  color: $owl-dot-active
+  font-weight: 300
+  letter-spacing: 0.62px
+  font-size: 1.4em
+  @include large
+    font-size: 1.5em
+
+.questions-section-bottom-bg-wrap
+  height: 10.8125em
+  background-image: url("../img/home/special-cars-hintergrund-3.jpg")
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  @include medium
+    height: 14.8125em
+  @include large
+    height: 36.8125em
+
+.our-cars-section
+  background: $about-section-bg
+  @extend %flex-column-center
+  padding-top: 3.0625em
+  padding-bottom: 3.32em
+  @include large
+    padding-top: 4.0625em
+    padding-bottom: 6.32em
+
+.our-cars-section-labels-wrap
+  width: 20em
+  height: auto
+  margin-top: 0
+  @extend %flex-row-center
+  flex-wrap: wrap
+  justify-content: space-evenly
+  @include medium
+    width: 40em
+  @include xmedium
+    width: 45em
+  @include large
+    width: 60.3125em
+  @include xlarge
+    width: 85.3125em
+    margin-top: 3.3125em
+  @include xxlarge
+    width: 112.3125em
+    margin-top: 5.3125em
+  @include xxxlarge
+    width: 144.3125em
+
+.our-cars-section-label-wrap
+  width: 8em
+  height: 5em
+  @include large
+    width: 6em
+    height: 4em
+  @include xlarge
+    width: 8em
+    height: 5em
+  @include xxlarge
+    width: 10em
+    height: 7em
+
+.our-cars-section-title-wrap
+  width: 17.1em
+  @include medium
+    width: 32.1em
+  @include large
+    width: 37.3125em
+  @include xlarge
+    width: 52.3125em
+  @include xxlarge
+    width: 72.3125em
+
+.page-footer
+  background: $footer-bg
+  @extend %flex-column-center
+  padding-top: 1.6875em
+  @include large
+    padding-top: 1.6875em
+
+.footer-info-wrap
+  @extend %flex-row-center-fs
+  flex-direction: column
+  align-items: center
+  width: 100%
+  @include large
+    flex-direction: row
+    align-items: flex-start
+
+.footer-logo-wrap
+  width: 11.875em
+  height: 7.813em
+  margin-top: 0
+  margin-bottom: 1.8em
+  @include large
+    width: 11.875em
+    height: 7.813em
+    margin-right: 4.8em
+    margin-left: 0
+    margin-bottom: 0
+  @include xlarge
+    width: 15.875em
+    height: 9.8125em
+    margin-right: 9.0625em
+
+.footer-info-cards-wrap
+  @extend %flex-row-sb-fs
+  width: 100%
+  flex-direction: column
+  align-items: center
+  @include medium
+    width: 40em
+    flex-direction: row
+    align-items: flex-start
+  @include large
+    width: 40.125em
+  @include xlarge
+    width: 54.125em
+
+.footer-info-card
+  width: 13em
+  @include medium
+    width: 11em
+  @include xlarge
+    width: 13.67em
+
+.footer-info-card-mb-sm
+  margin-bottom: 0.25em
+  @include large
+    margin-bottom: 0
+
+.footer-info-card-title
+  color: $text-white
+  font-family: Raleway, sans-serif
+  margin: 0
+  font-size: 1.125em
+  text-align: center
+  @include large
+    text-align: left
+
+
+.footer-info-underline
+  background: $footer-bg-underline
+  width: 100%
+  height: 2px
+  margin-top: 1.5625em
+  margin-bottom: 1.875em
+  @include large
+    margin-top: 1.5625em
+    margin-bottom: 1.875em
+
+.footer-contact-info-wrap
+  margin-bottom: 1.875em
+  @include large
+    margin-bottom: 1.875em
+
+.footer-contact-text,
+.footer-menu-link,
+.footer-copyright-label
+  color: $about-section-text
+  font-family: Raleway, sans-serif
+  font-weight: 300
+  margin: 0
+  font-size: 1em
+  text-align: center
+  @include large
+    text-align: left
+
+
+.contact-last-wrap
+  margin-bottom: 1.375em
+
+
+.footer-menu-link
+  margin-bottom: 1em
+  @include large
+    margin-bottom: 1em
+  & a
+    text-decoration: none
+    color: $about-section-text
+    &:hover
+      color: $text-white
+
+.footer-menu-link-not-hover
+  &:hover
+    color: $about-section-text
+
+.footer-copyright-wrap
+  width: 100%
+  background: $footer-bg-copyright
+  padding-top: 1.125em
+  padding-bottom: 1.63em
+  @include large
+    padding-top: 1.125em
+    padding-bottom: 1.63em
+
+.footer-copyright-label
+  font-size: .9em
+  font-weight: 400
+  text-align: center
+  @include large
+    text-align: left
+    padding-left: 3.8em
+    font-size: 0.875em
+    font-weight: 400
+  @include xlarge
+    padding-left: 6em
+  @include xxlarge
+    padding-left: 22.5em
+  @include xxxlarge
+    padding-left: 44.1875em
+
+
+
+// Contact page
+.contact-section-top-bg-wrap
+  background-image: url("../img/contact/special-cars-header-kontakt.jpg")
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  width: 100%
+  height: 8.8em
+  @include medium
+    height: 14.8em
+  @include large
+    height: 16.75em
+  @include xlarge
+    height: 28.75em
+
+.contact-form-img,
+.buy-section-top-bg
+  width: 100%
+  height: 100%
+
+.contact-section,
+.service-page-section,
+.privacy-page-section,
+.impressum-page-section
+  background: $about-section-bg
+  @extend %flex-column-center
+  padding-top: 1.9375em
+  @include large
+    padding-top: 2.9375em
+
+.contact-section-title-wrap
+  width: 17.1em
+  @include medium
+    width: 32.1em
+  @include xmedium
+    width: 40.1em
+  @include large
+    width: 59.5em
+  @include xlarge
+    width: 75.5em
+
+.contact-form-wrap
+  @extend %flex-row-center
+  margin-bottom: 4.5625em
+  margin-top: 1.3125em
+  flex-direction: column
+  @include medium
+    flex-direction: row
+    align-items: flex-start
+
+.contact-form-img-wrap
+  width: 17.1em
+  height: 21em
+  margin-right: 0
+  background-image: url("../img/contact/special-cars-kontakt.jpg")
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  @include medium
+    width: 15.1em
+    height: 19em
+    margin-right: 2em
+  @include xmedium
+    width: 17.1em
+    height: 21em
+    margin-right: 3em
+  @include large
+    width: 22.0625em
+    height: 33em
+    margin-right: 3.5em
+
+.contact-form
+  @extend %flex-row-fs-fs
+  flex-wrap: wrap
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  width: 17.1em
+  margin-top: 2em
+  @include medium
+    margin-top: 0
+    width: 15.1em
+  @include xmedium
+    width: 20.1em
+  @include large
+    flex-direction: row
+    justify-content: flex-start
+    align-items: flex-start
+    width: 34em
+  @include xlarge
+    width: 50.125em
+
+.contact-info-field-wrap
+  width: 100%
+  margin-bottom: 1.375em
+  @include large
+    width: 15.125em
+    margin-right: 1.875em
+    margin-bottom: 2.375em
+  @include xlarge
+    width: 23.125em
+
+.contact-field,
+.contact-message
+  width: 100%
+  height: 100%
+  background: transparent
+  border: none
+  border-bottom: 1px solid $contact-field-border-bottom
+  color: $text-white
+  font-family: Raleway, sans-serif
+  font-weight: 400
+  font-size: 1em
+
+.contact-field
+  padding-bottom: 1.125em
+
+.contact-info-message-wrap
+  width: 100%
+  height: 9.4em
+  margin-bottom: 2.375em
+  @include xlarge
+    width: 48.125em
+    height: 11.4em
+
+.contact-message
+  resize: none
+
+
+.contact-form-text
+  color: $text-white
+  font-family: Raleway, sans-serif
+  font-weight: 300
+  font-size: 1em
+  margin-bottom: 2.9375em
+  margin-top: 0
+  width: 100%
+  line-height: 2
+
+.text-underline
+  text-decoration: underline
+
+.address-section
+  @extend %flex-row-center
+  background: $about-section-bg
+  padding-bottom: 4.0625em
+
+.address-section-info-wrap
+  width: 17.1em
+  @extend %flex-column-fs
+  @include medium
+    width: 32.1em
+  @include xmedium
+    width: 40.1em
+  @include large
+    width: 59.4375em
+  @include xlarge
+    width: 75.4375em
+
+.address-info-wrap
+  @extend %flex-row-fs
+  margin-top: 2.8125em
+  flex-direction: column
+  width: 100%
+  @include medium
+    flex-direction: row
+
+
+.address-contact-text
+  color: $text-white
+  font-family: Raleway, sans-serif
+  font-weight: 400
+  font-size: 1.125em
+  margin: 0
+  text-align: center
+  @include medium
+    font-size: .9em
+  @include large
+    font-size: 1.125em
+    text-align: left
+
+.address-info-vertical-line
+  width: 2.625em
+  height: 1px
+  background: $about-card-title
+  margin-top: 2em
+  margin-bottom: 2em
+  @include medium
+    width: 1px
+    height: 2.625em
+    margin: 0 1em
+  @include large
+    margin: 0
+
+.address-contact-info-wrap-1
+  margin-right: 0
+  @include large
+    margin-right: 3em
+  @include xlarge
+    margin-right: 6em
+
+.address-contact-info-wrap-2
+  margin: 0
+  @include large
+    margin: 0 3.5625em
+  @include xlarge
+    margin: 0 4.5625em
+
+.address-contact-info-wrap-3
+  margin: 0
+  @include large
+    margin: 0 3.375em
+  @include xlarge
+    margin: 0 6.375em
+
+.address-contact-info-wrap-4
+  margin-left: 0
+  @include large
+    margin-left: 2.875em
+  @include xlarge
+    margin-left: 3.875em
+
+.contact-section-map
+  width: 100%
+  height: 28.875em
+  background: $references-section-info-bg
+  @include medium
+    height: 22.875em
+  @include xlarge
+    height: 33.875em
+
+//Buy page
+.buy-section
+  background: $about-section-bg
+  padding-top: 3.4375em
+  padding-bottom: 6.5625em
+  @extend %flex-row-center
+
+.buy-section-top-bg-wrap
+  @extend %flex-row-center
+  background-image: url("../img/buy/special-cars-header-fahrzeuge.jpg")
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  height: 20.8em
+  @include medium
+    height: 14.8em
+  @include large
+    height: 16.75em
+  @include xlarge
+    height: 28.75em
+
+.buy-section-title-wrap
+  width: 17.1em
+  @include medium
+    width: 32.1em
+  @include xmedium
+    width: 40.1em
+  @include large
+    width: 59.5em
+  @include xlarge
+    width: 73em
+
+.buy-section-info-wrap
+  margin-bottom: 0
+
+.buy-section-cards-wrap
+  width: 100%
+  align-items: center
+  @include large
+    width: 60em
+  @include xlarge
+    width: 75em
+
+.buy-section-card
+  background: $buy-section-card
+  margin-bottom: 1em
+  @include large
+    margin: 0.5em
+  @include xlarge
+    margin: 0.9375em
+
+
+.buy-section-card-bg-image-wrap
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 17.25em
+  background-image: url("../img/buy/special-cars-fahrzeuge-platzhalter.png")
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  @include medium
+    height: 21.25em
+  @include xlarge
+    height: 25.3125em
+
+.buy-card-title
+  @include xlarge
+    font-size: 1.8em
+
+//news page
+.news-page-top-bg-wrap
+  background-image: url("../img/news/special-cars-header-news.jpg")
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  width: 100%
+  height: 8.8em
+  @include medium
+    height: 14.8em
+  @include large
+    height: 16.75em
+  @include xlarge
+    height: 28.75em
+
+.news-section,
+.service-text-info-section,
+.about-page-history-section
+  background: $about-section-bg
+  @extend %flex-column-center
+  padding-top: 1.9375em
+  @include large
+    padding-top: 2.9375em
+    padding-bottom: 4.0625em
+
+
+.news-section-title-wrap,
+.service-text-info-wrap,
+.about-info-title-wrap,
+.about-page-history-info-wrap
+  width: 17.1em
+  @include medium
+    width: 32.1em
+  @include xmedium
+    width: 40.1em
+  @include large
+    width: 57.75em
+  @include xlarge
+    width: 73.8em
+
+.news-list-wrap
+  @extend %flex-column-center
+  background: $about-section-bg
+  padding-top: 2.0625em
+
+.news-list-item
+  @extend %flex-row-center-fs
+  flex-direction: column
+  width: 17.1em
+  @include medium
+    width: 32.1em
+  @include xmedium
+    width: 40.1em
+  @include large
+    width: auto
+    flex-direction: row
+
+.news-list-item-img-wrap
+  width: 100%
+  height: 11.625em
+  margin-bottom: 2em
+  @include medium
+    height: 20.625em
+  @include xmedium
+    height: 25.625em
+  @include large
+    margin-right: 1.875em
+    width: 25.375em
+    height: 15.625em
+  @include xlarge
+    width: 29.375em
+    height: 19.625em
+
+.news-list-item-first-img
+  background-image: url("../img/news/special-cars-news-platzhalter-2.jpg")
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+
+.news-list-item-second-img
+  background-image: url("../img/news/special-cars-news-platzhalter-1.jpg")
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+
+
+.news-list-item-info-wrap,
+.reference-item-info-wrap
+  @extend %flex-column-center
+  border-bottom: 1px solid $contact-field-border-bottom
+  margin-bottom: 1.6875em
+  align-items: flex-start
+  width: 100%
+  @include large
+    width: 30.5em
+  @include xlarge
+    width: 42.5em
+
+.news-item-date-wrap
+  background: $news-date-bg
+  padding-top: 0.625em
+  padding-bottom: 0.625em
+  width: 100%
+
+.news-item-date
+  margin: 0
+  color: $owl-dot-active
+  font-family: Raleway, sans-serif
+  font-weight: 400
+  font-size: 1em
+  padding-left: 0.9375em
+
+
+.news-item-title
+  color: $text-white
+  font-family: Blinker, sans-serif
+  font-size: 1.75em
+  font-weight: 200
+  margin-top: 1.25em
+  margin-bottom: 1.25em
+  margin-left: 0.54em
+
+.news-item-text
+  margin-left: 0.9375em
+
+.news-item-info-images-wrap
+  @extend %flex-row-sb-fs
+  margin-top: 2.8125em
+  margin-bottom: 2.1875em
+  width: 100%
+  flex-wrap: wrap
+  align-items: center
+  justify-content: space-evenly
+  @include xmedium
+    justify-content: space-between
+  @include large
+    align-items: flex-start
+    width: 30.5em
+  @include xlarge
+    width: 41.75em
+
+.news-item-info-img-wrap
+  width: 12.5em
+  height: 8.6875em
+  margin-bottom: 1em
+  @include large
+    margin-bottom: 0
+    width: 9.5em
+    height: 6.6875em
+  @include xlarge
+    width: 13em
+    height: 8.6875em
+
+.news-item-info-show-less-btn,
+.news-item-info-show-more-btn
+  color: $text-white
+  font-family: Raleway, sans-serif
+  font-weight: 400
+  font-size: 1rem
+  margin-top: 0
+  margin-bottom: 1.5em
+  margin-left: .75em
+  cursor: pointer
+
+.news-item-info-show-more-btn
+  margin-top: 2em
+
+//References page
+
+.references-item-title,
+.service-section-subtitle
+  color: $text-white
+  font-family: Blinker, sans-serif
+  font-size: 1.2em
+  font-weight: 200
+  margin-top: 0
+  margin-bottom: 1.25em
+  @include medium
+    font-size: 1.6em
+  @include medium
+    font-size: 1.5em
+  @include xlarge
+    font-size: 1.75em
+
+.references-item-title
+  @include xlarge
+    font-size: 2.125em
+    margin-bottom: .7em
+
+.references-item-text
+  font-family: Blinker, sans-serif
+  font-weight: bold
+  font-size: 1.0625em
+  color: $text-white
+
+.references-page-list-img
+  background-image: url("../img/references/special-cars-referenzen-platzhalter.jpg")
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+
+.reference-item-info-wrap
+  margin-bottom: 3em
+  @include large
+    padding-bottom: 6.9em
+  @include xlarge
+    padding-bottom: 8.1em
+
+//Service page
+
+.service-section-underline
+  width: 1.25rem
+  height: 2px
+  background: $owl-dot-active
+  margin-top: 1.1875em
+  margin-bottom: 0.6875em
+  @include large
+    margin-top: 1.25em
+    margin-bottom: 1.25em
+
+.service-section-subtitle,
+.service-section-info-subtitle
+  color: $text-white
+  font-family: Blinker, sans-serif
+  font-size: 1.2em
+  font-weight: 200
+  margin-top: 0.625em
+  margin-bottom: 1.25em
+  @include medium
+    font-size: 1.6em
+  @include medium
+    font-size: 1.5em
+  @include xlarge
+    font-size: 1.75em
+
+.service-section-info-subtitle
+  margin-top: 1.25em
+
+
+.service-section-info-wrap
+  margin-bottom: 6.25em
+  align-items: flex-start
+  @include xlarge
+    width: 71.6em
+
+.service-info-img-wrap,
+.about-info-img-wrap
+  width: 100%
+  height: 11.625em
+  margin-bottom: 2em
+  z-index: 10
+  @include medium
+    height: 20.625em
+  @include xmedium
+    height: 25.625em
+  @include large
+    margin-bottom: 0
+    margin-right: 1.875em
+    width: 25.375em
+    height: 15.625em
+  @include xlarge
+    width: 29.375em
+    height: 24.625em
+
+.service-transport-info-wrap,
+.about-section-text-wrap
+  align-items: flex-start
+  width: 100%
+  margin-bottom: 2em
+  @include large
+    width: 30.5em
+    margin-bottom: 4em
+  @include xlarge
+    margin-bottom: 0
+    width: 40.32em
+
+.service-info-img-wrap
+  background-image: url("../img/service/special-cars-service-verschiffung.jpg")
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+
+.service-section-middle-bg-wrap
+  background-image: url("../img/service/special-cars-service-hintergrund.jpg")
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  width: 100%
+  height: 6.8em
+  @include medium
+    height: 13.8em
+  @include large
+    margin-top: 0
+    height: 15.75em
+  @include xlarge
+    height: 18.0625em
+    margin-top: -4.8em
+  @include xxlarge
+    height: 23.0625em
+    margin-top: -6.25em
+
+.service-text-info-section
+  @include large
+    padding-top: 5.375em
+    padding-bottom: 5.5em
+
+.service-text-info-wrap
+  padding-bottom: 2.5em
+  @include xlarge
+    width: 70.32em
+
+
+//About page
+.about-page-top-bg-wrap
+  height: 5.8em
+  width: 100%
+  background-image: url("../img/about/special-cars-header-ueber-uns.jpg")
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  @include medium
+    height: 12.8em
+  @include large
+    height: 16.75em
+  @include xlarge
+    height: 23.75em
+  @include xxxlarge
+    height: 28.75em
+
+.about-page-history-section
+  background: $about-section-bg
+  @extend %flex-column-center
+  padding-top: 1.9375em
+  @include large
+    padding-top: 5.3em
+    padding-bottom: 4.38em
+
+.about-info-title-wrap
+  @include xlarge
+    width: 72.9em
+
+.about-info-wrap
+  @extend %flex-row-center-fs
+  flex-direction: column
+  width: 17.1em
+  @include medium
+    width: 32.1em
+  @include xmedium
+    width: 40.1em
+  @include large
+    width: auto
+    flex-direction: row
+    margin-top: 2.8125em
+
+.about-section-text-wrap
+  @include xlarge
+    width: 41.63em
+
+.about-page-author-title
+  @include xlarge
+    font-size: 2.22em
+    line-height: 1.5
+
+.about-page-author-label
+  font-size: 1em
+  margin-bottom: 2.31em
+
+.about-info-text
+  margin-bottom: 2.375em
+
+.about-info-img-wrap
+  background-image: url("../img/about/special-cars-ueber-uns-platzhalter.jpg")
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  @include xlarge
+    height: 31.0625em
+
+.about-page-middle-bg-wrap
+  width: 100%
+  height: 6.8em
+  background: $about-section-bg
+  background-image: url("../img/about/special-cars-ueber-uns-hintergrund.png")
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  @include medium
+    height: 13.8em
+  @include large
+    margin-top: -2em
+    height: 15.75em
+  @include xlarge
+    height: 23.0625em
+  @include xxlarge
+    height: 34.5em
+
+.about-video-bg-wrap
+  background: $about-page-video-bg
+  width: 100%
+  height: 11.625em
+  margin-bottom: 2em
+  z-index: 10
+  @extend %flex-row-center
+  @include medium
+    height: 20.625em
+  @include xmedium
+    height: 25.625em
+  @include large
+    margin-bottom: 0
+    margin-right: 2.38em
+    width: 34.875em
+    height: 15.25em
+  @include xlarge
+    width: 34.875em
+    height: 23.25em
+
+.about-video-btn-wrap
+  width: 3.6875em
+  height: 2.9375em
+  cursor: pointer
+
+.about-history-date
+  color: $owl-dot-active
+  font-family: Blinker, sans-serif
+  font-size: 1.75em
+  font-weight: 200
+  margin-top: 0
+  margin-bottom: .9em
+  line-height: 1
+
+.about-history-info-subtitle
+  color: $text-white
+  font-family: Raleway, sans-serif
+  font-weight: 400
+  font-size: 1em
+  margin-bottom: 1.2em
+  margin-top: 0
+
+.info-dot
+  width: 0.625rem
+  height: 0.625rem
+  background-color: $owl-dot-active
+  border-radius: 100%
+  margin-right: 0.8125em
+  margin-top: 0.6em
+
+.about-history-info-wrap
+  @extend %flex-row-fs-fs
+
+.about-history-text-wrap
+  width: 100%
+  @include large
+    width: 31.625em
+
+.about-page-history-info-wrap
+  @include xlarge
+    width: 70.8em
+
+
+//Privacy page
+.privacy-page-section
+  padding-top: 1.9375em
+  @include large
+    padding-top: 5.375em
+  @include xlarge
+    padding-top: 9.375em
+
+
+
+.privacy-page-info-wrap
+  margin-bottom: 2.75em
+  align-items: flex-start
+  word-break: break-word
+  @include xlarge
+    width: 73em
+
+.privacy-text-title
+  color: $owl-dot-active
+  font-family: Raleway, sans-serif
+  font-weight: 400
+  font-size: 1em
+  text-transform: uppercase
+  margin: 0
+
+.privacy-section-text
+  margin-bottom: 2em
+  line-height: 1.8
+
+.privacy-section-last-text
+  margin-bottom: 0
+
+.privacy-section-last-paragraph
+  margin-bottom: 1em
+
+//Impressum page
+.impressum-page-section
+  padding-top: 1.9375em
+  padding-bottom: 0.8125em
+  @include large
+    padding-top: 4.6875em
+
+.impressum-page-top-bg-wrap
+  background-image: url("../img/service/special-cars-header-service.jpg")
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  width: 100%
+  height: 8.8em
+  @include medium
+    height: 14.8em
+  @include large
+    height: 16.75em
+  @include xlarge
+    height: 28.75em
+
+//Intro page
+.into-page-bg-wrap
+  display: none
+  position: absolute
+  z-index: 1000
+  width: 100%
+  height: auto
+
+.intro-page-bg
+  width: 100%
+  height: 100%
+
+//Buy popup
+.buy-car-popup-wrap,
+.buy-car-modal-wrap
+  width: 100%
+  height: 100%
+  @extend %flex-column-center
+  background: $header-menu-wrap-mobile-bg
+  position: fixed
+  z-index: 1000
+  transition: all .4s ease-in-out
+  visibility: hidden
+  opacity: 0
+
+
+
+.buy-car-popup
+  width: 16.5em
+  height: auto
+  @extend %flex-column-fs
+  padding: 2.0625em 1.375em 1.5em 2.125em
+  background-image: url("../img/home/buy-car-popup-bg.png")
+  background-repeat: no-repeat
+  background-size: cover
+  position: relative
+  @include large
+    width: 48.4em
+    padding: 3.0625em 4.375em 2.5em 4.125em
+
+.buy-car-popup-title
+  color: $text-white
+  font-family: Blinker, sans-serif
+  font-weight: 200
+  font-size: 1em
+  margin-top: 0
+  margin-bottom: 0
+  @include large
+    font-size: 2em
+  @include xlarge
+    font-size: 2.625em
+
+.buy-car-popup-form-wrap
+  margin-top: 0
+  margin-bottom: 0
+  @include large
+    margin-top: 1.75em
+
+
+.buy-car-popup-text
+  margin-top: 0
+  margin-bottom: 0
+  font-size: .7em
+  @include large
+    font-size: .9em
+    line-height: 2
+  @include xlarge
+    font-size: 1em
+    margin-top: 1.9em
+
+
+.buy-car-popup-form
+  width: 100%
+  margin-top: 1em
+  @include large
+    justify-content: space-between
+
+.buy-car-popup-form-field-wrap
+  width: 100%
+  margin-bottom: 1em
+  @include large
+    width: 23.125em
+    margin-bottom: 2.375em
+    margin-right: 0
+
+.buy-car-popup-form-message-wrap
+  width: 100%
+  height: 3.4em
+  margin-bottom: 1em
+  @include large
+    height: 9.4em
+    margin-bottom: 2.375em
+  @include xlarge
+    width: 48.125em
+    height: 11.4em
+
+.buy-car-popup-form-field
+  padding-bottom: .5em
+  font-size: .7em
+  @include large
+    padding-bottom: 1.125em
+    font-size: 1em
+
+.buy-car-popup-form-message
+  font-size: .7em
+  @include large
+    font-size: 1em
+
+.buy-car-popup-form-text
+  margin-bottom: .5em
+  font-size: .7em
+  @include large
+    font-size: 1em
+    margin-bottom: 1.7em
+
+.popup-close-btn,
+.modal-close-btn
+  z-index: 1500
+  position: absolute
+  top: 0
+  right: 0
+  padding: 0.5em
+  background: $owl-dot-active
+  cursor: pointer
+  &:hover
+    background: $btn-hover
+  @include large
+    padding: 0.815em
+    padding-bottom: 0.627em
+
+
+.popup-close-btn-img
+  width: 100%
+  height: 100%
+
+.popup-close-btn-img-wrap
+  width: 1em
+  height: 1em
+  @include large
+    width: auto
+    height: auto
+
+.popup-opened
+  visibility: visible
+  opacity: 1
+
+.buy-car-modal-wrap
+  background: $buy-car-modal-wrap-bg
+  position: absolute
+  height: 461vh
+  @include medium
+    height: 260vh
+  @include large
+    height: 100%
+    position: fixed
+
+
+.buy-car-modal
+  @extend %flex-row-center
+  background: $about-section-bg
+  position: absolute
+  top: 0
+  flex-direction: column
+  align-items: flex-start
+  width: 20em
+  //padding-top: 11.7em
+  @include medium
+    width: 40em
+    //padding-top: 16em
+  @include large
+    flex-direction: row
+    width: 64em
+    height: 45.5em
+    top: unset
+    //padding-top: 0
+  @include xlarge
+    width: 90em
+    height: 44.5em
+  @include xxlarge
+    width: 104.4375em
+    height: 51.875em
+  @include xxxlarge
+    width: 124.4375em
+
+
+.buy-car-modal-slider
+  width: 20em !important
+  height: 12.875em
+  @include medium
+    height: 25.875em
+    width: 40em!important
+  @include large
+    width: 33.5em !important
+    height: 25.875em
+  @include xlarge
+    width: 50.5em!important
+    height: 44.5em
+  @include xxlarge
+    width: 65em!important
+  @include xxxlarge
+    width: 77.75em!important
+    height: 51.875em
+
+  .buy-car-modal-slide
+    height: 12.875em
+    width: 20em
+    background-image: url("../img/popup_buy/special-cars-fahrzeug-platzhalter.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    @include medium
+      height: 25.875em
+      width: 40em
+    @include large
+      height: 25.875em
+      width: 33.5em
+    @include xlarge
+      height: 44.5em
+      width: 50.5em
+    @include xxlarge
+      width: 65em
+    @include xxlarge
+      height: 51.875em
+      width: 100%
+
+
+  .owl-dots
+    counter-reset: slides-num
+    position: absolute
+    top: 85.5%
+    left: 43%
+    @include medium
+      top: 90.5%
+      left: 47%
+    @include large
+      top: 90%
+    @include xlarge
+      top: 110.5%
+    &:after
+      content: counter(slides-num)
+      display: inline-block
+      font-size: 1.5em
+      font-family: Blinker, sans-serif
+      font-weight: 400
+      color: $text-white
+      padding-left: .4em
+    @-moz-document url-prefix()
+      &:after
+        padding-left: 0
+        margin-left: -11px
+  .owl-dot
+    display: inline-block
+    counter-increment: slides-num
+    margin-right: -9px
+    background: none
+    border: none
+    span
+      display: none
+    &.active
+      &:before
+        content:  counter(slides-num) " / "
+        display: inline-block
+        font-family: Blinker, sans-serif
+        font-weight: 400
+        font-size: 1.7em
+        color: $text-white
+        position: absolute
+        left: 0
+        top: 0
+
+  .nav-btn
+    color: $text-white
+    font-family: Blinker, sans-serif
+    font-size: 1.6875em
+    font-weight: 400
+
+  .owl-nav button
+    position: absolute
+    z-index: 150
+    margin: 0
+    border: none
+    background: none
+    color: $text-white
+    font-family: Blinker, sans-serif
+    font-size: 1em
+    font-weight: 400
+    padding: 0.34em 0.68em
+    top: 5.5em
+    background: $owl-dot-active
+    @include medium
+      top: 11em
+    @include large
+      font-size: 1.6875em
+      top: 6.5em
+    @include xlarge
+      top: 12em
+    @include xxlarge
+      top: 13.5em
+
+
+
+  .owl-nav button.owl-prev
+    left: 0
+    outline: none
+
+  .owl-nav button.owl-next
+    right: 0
+    outline: none
+
+
+
+
+.buy-car-modal-info-wrap
+  @extend %flex-column-fs
+  padding: 1.25em .5em 2.375em
+  @include medium
+    padding: 1.25em 1.5em 2.375em
+  @include large
+    padding: 2.25em 3.4375em 2.375em 3.0625em
+
+.buy-car-modal-info,
+.buy-car-modal-info-line
+  @extend %flex-row-fs
+
+.buy-car-modal-subtitle
+  color: $text-white
+  font-family: Blinker, sans-serif
+  font-weight: 300
+  line-height: .9
+  @include xlarge
+    font-size: 2em
+    margin-top: 0
+  @include xxlarge
+    font-size: 2.3125em
+    margin-top: .65em
+
+
+.buy-car-modal-info-icon-wrap
+  margin-right: .5em
+  width: 1.625em
+  @extend %flex-row-center
+  @include large
+    margin-right: 2.4375em
+
+.buy-car-modal-info
+  margin-bottom: 0.875em
+
+.buy-car-modal-info-line
+  padding-bottom: 0.9375em
+  border-bottom: 1px solid $contact-field-border-bottom
+  width: 100%
+  @include xlarge
+    width: 28.8em
+  @include xxxlarge
+    width: 35.5625em
+
+.last-info-line
+  border-bottom: none
+  padding-bottom: 0
+.last-line
+  padding-top: .25em
+
+.buy-car-modal-info-title,
+.buy-car-modal-info-text,
+.buy-car-description-title,
+.buy-car-description-text
+  color: $text-white
+  font-family: Blinker, sans-serif
+  font-size: 1em
+  font-weight: 400
+  margin: 0
+
+.buy-car-modal-info-title
+  width: 11.25em
+
+.buy-car-description-title
+  font-weight: bold
+  @include xlarge
+    margin-top: 1.5em
+  @include xxlarge
+    margin-top: 4.5em
+
+.buy-car-description-text
+  margin-bottom: 1em
+  line-height: 1.3
+  font-weight: 300
+  @include xlarge
+    margin-bottom: 1.3em
+  @include xxlarge
+    margin-bottom: 4.5em
+
+.hide
+  display: none
+
+.show
+  display: block!important
+
+.accordion-panel
+  display: none
+
+
+
+

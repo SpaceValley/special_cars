@@ -1,0 +1,2682 @@
+.header-language-icons-wrap, .language-picked, .header-contact-icons-wrap, .bottom-header-wrap, .header-menu-wrap,
+.header-menu-wrap-mobile, .sticky-header-nav-wrap, .header-sticky-menu-wrap, .header-slider .owl-dots, .our-cars-section-labels-wrap, .contact-form-wrap, .address-section, .buy-section, .buy-section-top-bg-wrap, .about-video-bg-wrap, .buy-car-modal, .buy-car-modal-info-icon-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.about-section-cards-wrap, .footer-info-wrap, .news-list-item, .about-info-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start; }
+
+.header-language-dropdown li, .popup-line-wrap, .address-info-wrap, .buy-car-modal-info,
+.buy-car-modal-info-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center; }
+
+.contact-form, .about-history-info-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start; }
+
+.service-cards-wrap, .questions-section-info-wrap, .footer-info-cards-wrap, .news-item-info-images-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.top-header-wrap, .questions-section-contact-info-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center; }
+
+.page-header,
+.home-page-header, .header-language-dropdown,
+.header-menu-wrap-mobile,
+.header-menu-wrap-mobile-sticky, .popup-icon-wrap, .about-section, .service-section, .service-card, .references-section, .questions-section, .our-cars-section, .page-footer, .contact-section,
+.service-page-section,
+.privacy-page-section,
+.impressum-page-section, .news-section,
+.service-text-info-section,
+.about-page-history-section, .news-list-wrap, .news-list-item-info-wrap,
+.reference-item-info-wrap, .buy-car-popup-wrap,
+.buy-car-modal-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.service-section-content-wrap,
+.references-section-info-wrap, .address-section-info-wrap, .buy-car-popup, .buy-car-modal-info-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; }
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: calc(1rem + ((1vw - 3.2px) * 0)); }
+
+.home-page-header {
+  margin-top: -3.47rem; }
+
+.top-header-wrap {
+  background: #202328;
+  color: #ffffff;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 0.5em;
+  z-index: 30;
+  position: relative; }
+  @media (min-width: 1024px) {
+    .top-header-wrap {
+      flex-direction: row;
+      padding-top: 0; } }
+
+.top-header-small-wrap {
+  padding-bottom: 3.5em; }
+  @media (min-width: 1024px) {
+    .top-header-small-wrap {
+      padding-bottom: 0; } }
+
+.header-info {
+  font-family: 'Blinker', sans-serif;
+  margin: 0;
+  font-size: 1em;
+  letter-spacing: 0.32px;
+  font-weight: 400; }
+  @media (min-width: 1024px) {
+    .header-info {
+      font-size: 1em;
+      letter-spacing: 0.32px;
+      font-weight: 400;
+      margin-right: 2.5em; } }
+
+.header-vertical-line {
+  margin: 0 0.625em; }
+
+.language-picked {
+  font-family: 'Blinker', sans-serif;
+  margin: 0;
+  cursor: pointer;
+  font-size: 1em;
+  letter-spacing: 0.32px;
+  font-weight: 200; }
+  @media (min-width: 1024px) {
+    .language-picked {
+      font-size: 1em;
+      letter-spacing: 0.32px;
+      font-weight: 200; } }
+
+.lang-label-img {
+  margin-right: 0.625em; }
+
+.header-language-dropdown {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  transition: all .3s ease;
+  visibility: hidden;
+  opacity: 0;
+  top: 4.21em;
+  right: calc(1rem + 44vw);
+  cursor: pointer; }
+  @media (min-width: 475px) {
+    .header-language-dropdown {
+      right: calc(1rem + 47vw); } }
+  @media (min-width: 768px) {
+    .header-language-dropdown {
+      right: calc(1rem + 48vw); } }
+  @media (min-width: 1024px) {
+    .header-language-dropdown {
+      top: 2.53em;
+      right: 5.6em; } }
+  .header-language-dropdown li {
+    width: 100%;
+    padding: 0.625em 0.5em;
+    background: #202328; }
+    .header-language-dropdown li:hover {
+      background: #25292e;
+      cursor: pointer; }
+
+.opened {
+  visibility: visible;
+  opacity: 1;
+  z-index: 500; }
+
+.header-language-dropdown-item {
+  font-family: 'Blinker', sans-serif;
+  margin: 0;
+  font-size: 1em;
+  font-weight: 400; }
+  @media (min-width: 1024px) {
+    .header-language-dropdown-item {
+      font-size: 1em;
+      font-weight: 400; } }
+
+.header-contact-icons-wrap {
+  margin-left: 1.25em; }
+  @media (min-width: 1024px) {
+    .header-contact-icons-wrap {
+      margin-left: 1.25em; } }
+
+.header-contact-icon {
+  padding: 0.5625em; }
+  .header-contact-icon:hover {
+    background: #313438;
+    cursor: pointer; }
+
+.bottom-header-wrap {
+  position: absolute;
+  width: 100%;
+  top: 4.2em;
+  z-index: 20; }
+  @media (min-width: 1024px) {
+    .bottom-header-wrap {
+      top: 2.5625em; } }
+
+.hide-main-header {
+  display: none !important; }
+
+.header-bg-fade-wrap {
+  z-index: 10;
+  width: 100%;
+  height: 4em;
+  position: absolute;
+  top: 0; }
+  @media (min-width: 475px) {
+    .header-bg-fade-wrap {
+      height: 5em; } }
+  @media (min-width: 768px) {
+    .header-bg-fade-wrap {
+      height: 8em; } }
+  @media (min-width: 1024px) {
+    .header-bg-fade-wrap {
+      height: 12.875em;
+      position: absolute; } }
+  @media (min-width: 1440px) {
+    .header-bg-fade-wrap {
+      height: 22.875em; } }
+
+.header-bg-fade,
+.header-menu-logo,
+.header-menu-logo-sm,
+.mobile-menu-icon,
+.service-card-img,
+.our-cars-section-label,
+.footer-section-logo {
+  width: 100%;
+  height: 100%; }
+
+.header-menu-logo {
+  background-image: url("../img/home/special-cars-logo-header-sticky.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (min-width: 1024px) {
+    .header-menu-logo {
+      background-image: url("../img/home/special-cars-logo-header.png"); } }
+
+.header-menu-logo-sm {
+  background-image: url("../img/home/special-cars-logo-header-sticky.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.small-header-menu-wrap {
+  background: rgba(37, 41, 46, 0.8); }
+
+.header-menu-wrap,
+.header-menu-wrap-mobile {
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+  width: 100%;
+  list-style-type: none;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
+
+.header-menu-wrap-mobile,
+.header-menu-wrap-mobile-sticky {
+  background: rgba(37, 41, 46, 0.95);
+  width: 8em;
+  padding: 1em;
+  z-index: 250;
+  position: fixed;
+  right: 0;
+  top: 7.7em;
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+  list-style-type: none;
+  margin: 0; }
+
+.menu-opened {
+  visibility: visible;
+  opacity: 1;
+  z-index: 300; }
+
+.menu-sticky {
+  top: 3.53em !important; }
+
+.small-header-menu-wrap {
+  position: absolute;
+  top: 4.28em;
+  z-index: 120; }
+  @media (min-width: 1024px) {
+    .small-header-menu-wrap {
+      top: 2.59em; } }
+
+.sticky-top {
+  position: fixed !important;
+  top: 0 !important; }
+
+.sticky-header-nav-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  background: rgba(37, 41, 46, 0.8); }
+
+.header-sticky-menu-wrap {
+  margin: 0;
+  padding: 0;
+  z-index: 20;
+  width: 100%;
+  list-style-type: none;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
+
+.mobile-menu-icon-wrap,
+.mobile-menu-icon-wrap-sticky {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  right: 1em;
+  cursor: pointer; }
+  @media (min-width: 1024px) {
+    .mobile-menu-icon-wrap,
+    .mobile-menu-icon-wrap-sticky {
+      display: none; } }
+
+.header-menu-item {
+  color: #ffffff;
+  font-family: 'Blinker', sans-serif;
+  font-size: 1.0625em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3.4px;
+  margin: 0 1em;
+  display: none; }
+  .header-menu-item:hover {
+    color: #c19846; }
+  @media (min-width: 1024px) {
+    .header-menu-item {
+      display: block;
+      font-size: .9em;
+      font-weight: 400;
+      letter-spacing: 3.4px;
+      margin: 0 1em; } }
+  @media (min-width: 1440px) {
+    .header-menu-item {
+      margin: 0 1.5625em;
+      font-size: 1.0625em; } }
+
+.header-menu-item a {
+  text-decoration: none;
+  color: inherit; }
+
+.header-menu-item-mobile {
+  color: #ffffff;
+  font-family: 'Blinker', sans-serif;
+  font-size: .9em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3.4px;
+  margin: 0 1em 1em;
+  cursor: pointer; }
+  .header-menu-item-mobile:hover {
+    color: #c19846; }
+
+.header-menu-item-mobile a {
+  text-decoration: none;
+  color: inherit; }
+
+.header-menu-logo-wrap {
+  width: 2.25em;
+  height: 2.5em;
+  margin: 0; }
+  @media (min-width: 1024px) {
+    .header-menu-logo-wrap {
+      width: 11.875em;
+      height: 7.813em;
+      margin: 0 2.1875em; } }
+  @media (min-width: 1440px) {
+    .header-menu-logo-wrap {
+      width: 15.875em;
+      height: 9.8125em; } }
+
+.header-menu-logo-wrap-sm {
+  width: 2.25em;
+  height: 2.5em;
+  margin: 0 9em; }
+  .header-menu-logo-wrap-sm a {
+    outline: none; }
+
+.popup-mail-icon-wrap,
+.popup-car-icon-wrap {
+  position: fixed;
+  right: 0;
+  z-index: 15;
+  cursor: pointer; }
+
+.popup-mail-icon-wrap {
+  top: 10.8em; }
+  @media (min-width: 475px) {
+    .popup-mail-icon-wrap {
+      top: 13.5em; } }
+  @media (min-width: 768px) {
+    .popup-mail-icon-wrap {
+      top: 19.5em; } }
+  @media (min-width: 1024px) {
+    .popup-mail-icon-wrap {
+      top: 20.3125em; } }
+  @media (min-width: 1440px) {
+    .popup-mail-icon-wrap {
+      top: 32.313em; } }
+  .popup-mail-icon-wrap a {
+    text-decoration: none; }
+
+.popup-car-icon-wrap {
+  top: 13.2em; }
+  @media (min-width: 475px) {
+    .popup-car-icon-wrap {
+      top: 16em; } }
+  @media (min-width: 768px) {
+    .popup-car-icon-wrap {
+      top: 22em; } }
+  @media (min-width: 1024px) {
+    .popup-car-icon-wrap {
+      top: 23.5em; } }
+  @media (min-width: 1440px) {
+    .popup-car-icon-wrap {
+      top: 35.3em; } }
+
+.popup-icon-wrap {
+  width: 2em;
+  height: 2em;
+  background: #c19846;
+  cursor: pointer; }
+  @media (min-width: 1024px) {
+    .popup-icon-wrap {
+      width: 2.5em;
+      height: 2.5em; } }
+
+.popup-text {
+  color: #ffffff;
+  font-family: 'Blinker', sans-serif;
+  font-size: .9em;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1; }
+
+.popup-line-wrap {
+  background-color: rgba(193, 152, 70, 0.8);
+  margin-bottom: 0.625em; }
+  .popup-line-wrap:hover .show-transition {
+    padding-left: 1em;
+    width: 11.375em; }
+
+.show-transition {
+  width: 0;
+  transition: .3s width ease-in-out; }
+
+.owl-stage {
+  display: -webkit-box;
+  display: -moz-box; }
+
+.owl-item {
+  display: inline !important; }
+
+.owl-carousel {
+  display: block !important; }
+
+.header-slider {
+  width: 100%;
+  height: auto; }
+  .header-slider .slide {
+    width: 100%;
+    background-image: url("../img/home/special-cars-home-slider-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 8.875em; }
+    @media (min-width: 475px) {
+      .header-slider .slide {
+        height: 11.875em; } }
+    @media (min-width: 768px) {
+      .header-slider .slide {
+        height: 17.875em; } }
+    @media (min-width: 1024px) {
+      .header-slider .slide {
+        height: 28.875em; } }
+    @media (min-width: 1440px) {
+      .header-slider .slide {
+        height: 38.875em; } }
+    @media (min-width: 2410px) {
+      .header-slider .slide {
+        height: 46.875em; } }
+  .header-slider .nav-btn {
+    color: #ffffff;
+    font-family: Blinker, sans-serif;
+    font-size: 1.6875em;
+    font-weight: 400; }
+  .header-slider .owl-nav button {
+    position: absolute;
+    z-index: 150;
+    margin: 0;
+    border: none;
+    background: none;
+    color: #ffffff;
+    font-family: Blinker, sans-serif;
+    font-size: 1.6875em;
+    font-weight: 400;
+    padding: 0.52em;
+    top: 1.5em; }
+    @media (min-width: 475px) {
+      .header-slider .owl-nav button {
+        top: 2.25em; } }
+    @media (min-width: 768px) {
+      .header-slider .owl-nav button {
+        top: 4em; } }
+    @media (min-width: 1024px) {
+      .header-slider .owl-nav button {
+        top: 6.5em; } }
+    @media (min-width: 1440px) {
+      .header-slider .owl-nav button {
+        top: 13.1em; } }
+  .header-slider .owl-nav button.owl-prev {
+    left: 0; }
+  .header-slider .owl-nav button.owl-next {
+    right: 0; }
+  .header-slider .owl-dots {
+    width: 100%;
+    position: absolute;
+    bottom: 0; }
+    @media (min-width: 1024px) {
+      .header-slider .owl-dots {
+        bottom: 17px; } }
+  .header-slider .owl-dots button.owl-dot {
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    margin: 0 5px;
+    padding: 0;
+    transform: rotate(45deg);
+    cursor: pointer; }
+  .header-slider .owl-dots button.owl-dot.active {
+    background: #c19846; }
+  .header-slider .owl-dots button.owl-dot:focus {
+    outline: none; }
+
+.about-section {
+  background: #25292e;
+  position: relative;
+  padding-top: 4.375em;
+  padding-bottom: 9.25em; }
+  @media (min-width: 640px) {
+    .about-section {
+      padding-bottom: 15.25em; } }
+  @media (min-width: 1024px) {
+    .about-section {
+      padding-top: 4.375em;
+      padding-bottom: 15.25em; } }
+
+.about-section-info-wrap {
+  width: 17.1875em;
+  margin-bottom: 3.4375em; }
+  @media (min-width: 640px) {
+    .about-section-info-wrap {
+      width: 32.1875em; } }
+  @media (min-width: 1024px) {
+    .about-section-info-wrap {
+      width: 50.1875em;
+      margin-bottom: 4.9375em; } }
+  @media (min-width: 1440px) {
+    .about-section-info-wrap {
+      width: 72.1875em;
+      margin-bottom: 4.5em; } }
+
+.author-text,
+.service-section-title,
+.questions-section-info-card-title,
+.references-section-title,
+.about-page-author-title,
+.buy-car-popup-title {
+  color: #ffffff;
+  font-family: Blinker, sans-serif;
+  font-weight: 200;
+  font-size: 1.6em;
+  margin-top: 0;
+  margin-bottom: 0.43em; }
+  @media (min-width: 1024px) {
+    .author-text,
+    .service-section-title,
+    .questions-section-info-card-title,
+    .references-section-title,
+    .about-page-author-title,
+    .buy-car-popup-title {
+      font-size: 2em;
+      margin-top: 0;
+      margin-bottom: 0.43em; } }
+  @media (min-width: 1440px) {
+    .author-text,
+    .service-section-title,
+    .questions-section-info-card-title,
+    .references-section-title,
+    .about-page-author-title,
+    .buy-car-popup-title {
+      font-size: 2.625em; } }
+
+.author-label {
+  color: #c19846;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  font-size: 1em; }
+
+.about-section-underline,
+.about-section-card-underline,
+.questions-section-info-card-underline {
+  width: 1.25rem;
+  height: 2px;
+  background: #c19846;
+  margin-top: 1.1875em;
+  margin-bottom: 0.6875em; }
+  @media (min-width: 1024px) {
+    .about-section-underline,
+    .about-section-card-underline,
+    .questions-section-info-card-underline {
+      margin-top: 2.1875em;
+      margin-bottom: 1.6875em; } }
+
+.about-section-text,
+.about-card-text,
+.questions-section-info-card-text,
+.service-card-text,
+.questions-section-contact-info-text {
+  color: #8f9296;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  font-size: .8em;
+  line-height: 2; }
+  @media (min-width: 1024px) {
+    .about-section-text,
+    .about-card-text,
+    .questions-section-info-card-text,
+    .service-card-text,
+    .questions-section-contact-info-text {
+      font-size: .9em;
+      line-height: 2; } }
+  @media (min-width: 1440px) {
+    .about-section-text,
+    .about-card-text,
+    .questions-section-info-card-text,
+    .service-card-text,
+    .questions-section-contact-info-text {
+      font-size: 1em; } }
+
+.about-section-cards-wrap {
+  z-index: 10;
+  flex-direction: column; }
+  @media (min-width: 640px) {
+    .about-section-cards-wrap {
+      flex-wrap: wrap;
+      flex-direction: row; } }
+  @media (min-width: 1024px) {
+    .about-section-cards-wrap {
+      flex-direction: row; } }
+
+.about-section-card,
+.buy-section-card {
+  box-shadow: 0 0 70px #0d0e0f;
+  background-color: #25292e;
+  position: relative;
+  padding: 10.3125em 1em 1.9375em;
+  width: 15em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 1.5em; }
+  @media (min-width: 640px) {
+    .about-section-card,
+    .buy-section-card {
+      width: 17em;
+      padding: 13.3125em 1em 1.9375em; } }
+  @media (min-width: 1024px) {
+    .about-section-card,
+    .buy-section-card {
+      margin: 0.5em; } }
+  @media (min-width: 1440px) {
+    .about-section-card,
+    .buy-section-card {
+      padding: 16.3125em 1.5625em 1.9375em;
+      width: 20em;
+      margin: 0.9375em; } }
+
+.about-section-card-bg-image-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 14.25em; }
+  @media (min-width: 640px) {
+    .about-section-card-bg-image-wrap {
+      height: 17.25em; } }
+  @media (min-width: 1440px) {
+    .about-section-card-bg-image-wrap {
+      height: 20.25em; } }
+
+.about-section-first-card-img,
+.about-section-second-card-img,
+.about-section-third-card-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.about-section-first-card-img {
+  background-image: url("../img/home/special-cars-fahrzeuge.png"); }
+
+.about-section-second-card-img {
+  background-image: url("../img/home/special-cars-ueber-uns.png"); }
+
+.about-section-third-card-img {
+  background-image: url("../img/home/special-cars-service.png"); }
+
+.about-card-title,
+.buy-card-title {
+  color: #ffffff;
+  font-family: Blinker, sans-serif;
+  font-weight: 200;
+  margin: 0;
+  font-size: 1.8em;
+  z-index: 10;
+  position: relative; }
+  @media (min-width: 1024px) {
+    .about-card-title,
+    .buy-card-title {
+      font-size: 1.8em; } }
+  @media (min-width: 1440px) {
+    .about-card-title,
+    .buy-card-title {
+      font-size: 2.375em; } }
+
+.about-section-card-underline {
+  margin-top: 1.5em;
+  margin-bottom: 1.25em;
+  z-index: 10;
+  position: relative; }
+  @media (min-width: 1024px) {
+    .about-section-card-underline {
+      margin-top: 1.5em;
+      margin-bottom: 1.25em; } }
+
+.about-card-text {
+  font-family: Raleway, sans-serif;
+  margin: 0;
+  font-size: 0.83em;
+  margin-bottom: 2em;
+  line-height: 2.1;
+  z-index: 10;
+  position: relative; }
+  @media (min-width: 1024px) {
+    .about-card-text {
+      font-size: 0.83em;
+      margin-bottom: 2em;
+      line-height: 1.8; } }
+  @media (min-width: 1440px) {
+    .about-card-text {
+      font-size: 1em; } }
+
+.about-card-text-white {
+  color: #ffffff;
+  word-break: break-all; }
+
+.about-card-btn,
+.service-section-btn,
+.references-section-btn,
+.questions-section-info-card-btn {
+  background: #c19846;
+  color: #ffffff;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.12px;
+  border: none;
+  font-size: 0.7em;
+  padding: 1em 2em 1.125em;
+  cursor: pointer; }
+  .about-card-btn:hover,
+  .service-section-btn:hover,
+  .references-section-btn:hover,
+  .questions-section-info-card-btn:hover {
+    background: #ad8028; }
+  @media (min-width: 1920px) {
+    .about-card-btn,
+    .service-section-btn,
+    .references-section-btn,
+    .questions-section-info-card-btn {
+      font-size: 0.875em; } }
+
+.about-section-bottom-bg-wrap {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/home/special-cars-hintergrund-1.jpg"); }
+
+.about-section-bottom-bg-wrap,
+.questions-section-bottom-bg-wrap {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  height: 9.6875em; }
+  @media (min-width: 640px) {
+    .about-section-bottom-bg-wrap,
+    .questions-section-bottom-bg-wrap {
+      height: 11.6875em; } }
+  @media (min-width: 768px) {
+    .about-section-bottom-bg-wrap,
+    .questions-section-bottom-bg-wrap {
+      height: 14.6875em; } }
+  @media (min-width: 1024px) {
+    .about-section-bottom-bg-wrap,
+    .questions-section-bottom-bg-wrap {
+      height: 40.6875em; } }
+
+.service-section {
+  background: #25292e;
+  padding-top: 3.5625em;
+  padding-bottom: 4.25em; }
+  @media (min-width: 1024px) {
+    .service-section {
+      padding-top: 6.5625em;
+      padding-bottom: 5.25em; } }
+
+.service-section-content-wrap,
+.references-section-info-wrap {
+  align-items: center; }
+  @media (min-width: 1024px) {
+    .service-section-content-wrap,
+    .references-section-info-wrap {
+      align-items: flex-start; } }
+
+.service-section-title-wrap {
+  width: 17.1em; }
+  @media (min-width: 640px) {
+    .service-section-title-wrap {
+      width: 32.1em; } }
+  @media (min-width: 1024px) {
+    .service-section-title-wrap {
+      width: auto; } }
+
+@media (min-width: 1024px) {
+  .service-section-title {
+    margin: 0; } }
+
+.service-cards-wrap {
+  margin-top: 2.0625em;
+  width: 17.1em;
+  flex-direction: column; }
+  @media (min-width: 640px) {
+    .service-cards-wrap {
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%; } }
+  @media (min-width: 1024px) {
+    .service-cards-wrap {
+      justify-content: space-between;
+      margin-top: 2.0625em;
+      width: 59.1em; } }
+  @media (min-width: 1440px) {
+    .service-cards-wrap {
+      width: 71.625em; } }
+
+.service-card {
+  width: 100%;
+  height: auto; }
+  @media (min-width: 640px) {
+    .service-card {
+      width: 18em; } }
+  @media (min-width: 1024px) {
+    .service-card {
+      width: 14.3125em;
+      align-items: flex-start; } }
+  @media (min-width: 1440px) {
+    .service-card {
+      width: 15.3125em; } }
+
+.service-card-img-wrap {
+  width: 5.375em;
+  height: 5.375em;
+  margin-bottom: 1.375em; }
+  @media (min-width: 1024px) {
+    .service-card-img-wrap {
+      width: 5.375em;
+      height: 5.375em;
+      margin-bottom: 1.375em; } }
+
+.service-card-label {
+  font-family: Raleway, sans-serif;
+  color: #c19846;
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 1.5625em; }
+  @media (min-width: 1024px) {
+    .service-card-label {
+      font-size: 1em;
+      margin-top: 0;
+      margin-bottom: 1.5625em; } }
+
+.service-card-title {
+  color: #ffffff;
+  font-family: Blinker, sans-serif;
+  font-weight: 200;
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 1.1em;
+  text-align: center; }
+  @media (min-width: 1024px) {
+    .service-card-title {
+      text-align: unset;
+      font-size: 1.5em;
+      margin-top: 0;
+      margin-bottom: 1.1em; } }
+  @media (min-width: 1440px) {
+    .service-card-title {
+      font-size: 1.75em; } }
+
+.service-card-text {
+  color: #8f9296;
+  margin-bottom: 2em;
+  text-align: center; }
+  @media (min-width: 1024px) {
+    .service-card-text {
+      text-align: unset;
+      margin-bottom: 2em; } }
+  @media (min-width: 1440px) {
+    .service-card-text {
+      margin-bottom: 3.625em; } }
+
+.service-section-btn {
+  padding: 1em 4.37em 1.125em; }
+  @media (min-width: 1024px) {
+    .service-section-btn {
+      padding: 1em 4.37em 1.125em; } }
+
+.references-section {
+  background-image: url("../img/home/special-cars-hintergrund-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 3.5em;
+  padding-bottom: 3.9375em;
+  background-position: center;
+  background-attachment: fixed; }
+  @media (min-width: 1024px) {
+    .references-section {
+      padding-top: 10.5em;
+      padding-bottom: 10.9375em; } }
+
+@media (min-width: 640px) {
+  .references-section-info-wrap {
+    align-items: flex-start; } }
+
+.references-section-info {
+  background: rgba(37, 41, 46, 0.8);
+  padding: 1.4375em 0.8125em 1.625em 0.9375em;
+  margin-bottom: 1.5625em;
+  width: 16.35em; }
+  @media (min-width: 640px) {
+    .references-section-info {
+      width: 25.5em; } }
+  @media (min-width: 1024px) {
+    .references-section-info {
+      padding: 1.4375em 1.8125em 2.625em 1.9375em;
+      margin-bottom: 1.5625em;
+      width: 55.35em; } }
+  @media (min-width: 1440px) {
+    .references-section-info {
+      width: 59.35em; } }
+
+.references-section-title {
+  font-size: 1.4em; }
+  @media (min-width: 1024px) {
+    .references-section-title {
+      font-size: 2em; } }
+  @media (min-width: 1440px) {
+    .references-section-title {
+      font-size: 2.625em; } }
+
+.references-section-btn {
+  padding: 1em 2.57em 1.125em; }
+  @media (min-width: 1024px) {
+    .references-section-btn {
+      padding: 1em 2.57em 1.125em; } }
+
+.questions-section {
+  position: relative;
+  background: #25292e;
+  padding-top: 1em;
+  padding-bottom: 5.75em; }
+  @media (min-width: 1024px) {
+    .questions-section {
+      padding-top: 5em;
+      padding-bottom: 6.75em; } }
+
+.questions-section-info-wrap {
+  z-index: 10;
+  width: 17.1em;
+  margin-bottom: 3em;
+  flex-direction: column; }
+  @media (min-width: 640px) {
+    .questions-section-info-wrap {
+      width: 32.1em; } }
+  @media (min-width: 1024px) {
+    .questions-section-info-wrap {
+      flex-direction: row;
+      width: 59.1em;
+      margin-bottom: 7.9375em; } }
+  @media (min-width: 1920px) {
+    .questions-section-info-wrap {
+      width: 72.9375em;
+      margin-bottom: 10.9375em; } }
+
+.questions-section-info-card {
+  width: 15.9375em;
+  margin-top: 1.25em; }
+  @media (min-width: 640px) {
+    .questions-section-info-card {
+      width: 30.9375em; } }
+  @media (min-width: 1024px) {
+    .questions-section-info-card {
+      width: 24.9375em;
+      margin-top: 1.25em; } }
+
+.questions-section-info-img-wrap {
+  width: 100%;
+  height: 10.6875em;
+  margin-top: 3em;
+  background-image: url("../img/home/special-cars-auto-verkaufen.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media (min-width: 640px) {
+    .questions-section-info-img-wrap {
+      width: 28em;
+      height: 15.6875em;
+      margin-left: 4em; } }
+  @media (min-width: 1024px) {
+    .questions-section-info-img-wrap {
+      width: 36.125em;
+      height: 20.6875em;
+      margin-top: 0;
+      margin-left: 0; } }
+  @media (min-width: 1440px) {
+    .questions-section-info-img-wrap {
+      width: 43.125em;
+      height: 24.6875em; } }
+
+.questions-section-info-card-title {
+  margin-bottom: 0; }
+
+.questions-section-info-card-text {
+  margin-bottom: 2.625em;
+  line-height: 1.6; }
+  @media (min-width: 1024px) {
+    .questions-section-info-card-text {
+      margin-bottom: 2.625em;
+      line-height: 1.6; } }
+
+.questions-section-info-card-btn {
+  padding: .9em 3.19em .96em; }
+  @media (min-width: 1024px) {
+    .questions-section-info-card-btn {
+      padding: .9em 3.19em .96em; } }
+
+.questions-section-contact-info-wrap {
+  z-index: 10;
+  width: 17.1em;
+  margin-bottom: 0; }
+  @media (min-width: 640px) {
+    .questions-section-contact-info-wrap {
+      width: 30.1em; } }
+  @media (min-width: 1024px) {
+    .questions-section-contact-info-wrap {
+      width: 59.1em;
+      margin-bottom: 0; } }
+  @media (min-width: 1920px) {
+    .questions-section-contact-info-wrap {
+      width: 72.9375em; } }
+
+.questions-section-contact-info {
+  background: rgba(37, 41, 46, 0.8);
+  padding: 1.4375em 1.5625em 1.375em 1.4375em; }
+  @media (min-width: 1024px) {
+    .questions-section-contact-info {
+      padding: 1.4375em 3.5625em 1.375em 1.4375em; } }
+
+.questions-section-info-card-underline {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em; }
+  @media (min-width: 1024px) {
+    .questions-section-info-card-underline {
+      margin-top: 1.25em;
+      margin-bottom: 1.25em; } }
+
+.questions-section-contact-info-text {
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 1.7; }
+
+.questions-section-contact {
+  font-family: Raleway, sans-serif;
+  color: #c19846;
+  font-weight: 300;
+  letter-spacing: 0.62px;
+  font-size: 1.4em; }
+  @media (min-width: 1024px) {
+    .questions-section-contact {
+      font-size: 1.5em; } }
+
+.questions-section-bottom-bg-wrap {
+  height: 10.8125em;
+  background-image: url("../img/home/special-cars-hintergrund-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media (min-width: 640px) {
+    .questions-section-bottom-bg-wrap {
+      height: 14.8125em; } }
+  @media (min-width: 1024px) {
+    .questions-section-bottom-bg-wrap {
+      height: 36.8125em; } }
+
+.our-cars-section {
+  background: #25292e;
+  padding-top: 3.0625em;
+  padding-bottom: 3.32em; }
+  @media (min-width: 1024px) {
+    .our-cars-section {
+      padding-top: 4.0625em;
+      padding-bottom: 6.32em; } }
+
+.our-cars-section-labels-wrap {
+  width: 20em;
+  height: auto;
+  margin-top: 0;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  @media (min-width: 640px) {
+    .our-cars-section-labels-wrap {
+      width: 40em; } }
+  @media (min-width: 768px) {
+    .our-cars-section-labels-wrap {
+      width: 45em; } }
+  @media (min-width: 1024px) {
+    .our-cars-section-labels-wrap {
+      width: 60.3125em; } }
+  @media (min-width: 1440px) {
+    .our-cars-section-labels-wrap {
+      width: 85.3125em;
+      margin-top: 3.3125em; } }
+  @media (min-width: 1920px) {
+    .our-cars-section-labels-wrap {
+      width: 112.3125em;
+      margin-top: 5.3125em; } }
+  @media (min-width: 2410px) {
+    .our-cars-section-labels-wrap {
+      width: 144.3125em; } }
+
+.our-cars-section-label-wrap {
+  width: 8em;
+  height: 5em; }
+  @media (min-width: 1024px) {
+    .our-cars-section-label-wrap {
+      width: 6em;
+      height: 4em; } }
+  @media (min-width: 1440px) {
+    .our-cars-section-label-wrap {
+      width: 8em;
+      height: 5em; } }
+  @media (min-width: 1920px) {
+    .our-cars-section-label-wrap {
+      width: 10em;
+      height: 7em; } }
+
+.our-cars-section-title-wrap {
+  width: 17.1em; }
+  @media (min-width: 640px) {
+    .our-cars-section-title-wrap {
+      width: 32.1em; } }
+  @media (min-width: 1024px) {
+    .our-cars-section-title-wrap {
+      width: 37.3125em; } }
+  @media (min-width: 1440px) {
+    .our-cars-section-title-wrap {
+      width: 52.3125em; } }
+  @media (min-width: 1920px) {
+    .our-cars-section-title-wrap {
+      width: 72.3125em; } }
+
+.page-footer {
+  background: #202328;
+  padding-top: 1.6875em; }
+  @media (min-width: 1024px) {
+    .page-footer {
+      padding-top: 1.6875em; } }
+
+.footer-info-wrap {
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+  @media (min-width: 1024px) {
+    .footer-info-wrap {
+      flex-direction: row;
+      align-items: flex-start; } }
+
+.footer-logo-wrap {
+  width: 11.875em;
+  height: 7.813em;
+  margin-top: 0;
+  margin-bottom: 1.8em; }
+  @media (min-width: 1024px) {
+    .footer-logo-wrap {
+      width: 11.875em;
+      height: 7.813em;
+      margin-right: 4.8em;
+      margin-left: 0;
+      margin-bottom: 0; } }
+  @media (min-width: 1440px) {
+    .footer-logo-wrap {
+      width: 15.875em;
+      height: 9.8125em;
+      margin-right: 9.0625em; } }
+
+.footer-info-cards-wrap {
+  width: 100%;
+  flex-direction: column;
+  align-items: center; }
+  @media (min-width: 640px) {
+    .footer-info-cards-wrap {
+      width: 40em;
+      flex-direction: row;
+      align-items: flex-start; } }
+  @media (min-width: 1024px) {
+    .footer-info-cards-wrap {
+      width: 40.125em; } }
+  @media (min-width: 1440px) {
+    .footer-info-cards-wrap {
+      width: 54.125em; } }
+
+.footer-info-card {
+  width: 13em; }
+  @media (min-width: 640px) {
+    .footer-info-card {
+      width: 11em; } }
+  @media (min-width: 1440px) {
+    .footer-info-card {
+      width: 13.67em; } }
+
+.footer-info-card-mb-sm {
+  margin-bottom: 0.25em; }
+  @media (min-width: 1024px) {
+    .footer-info-card-mb-sm {
+      margin-bottom: 0; } }
+
+.footer-info-card-title {
+  color: #ffffff;
+  font-family: Raleway, sans-serif;
+  margin: 0;
+  font-size: 1.125em;
+  text-align: center; }
+  @media (min-width: 1024px) {
+    .footer-info-card-title {
+      text-align: left; } }
+
+.footer-info-underline {
+  background: #34373b;
+  width: 100%;
+  height: 2px;
+  margin-top: 1.5625em;
+  margin-bottom: 1.875em; }
+  @media (min-width: 1024px) {
+    .footer-info-underline {
+      margin-top: 1.5625em;
+      margin-bottom: 1.875em; } }
+
+.footer-contact-info-wrap {
+  margin-bottom: 1.875em; }
+  @media (min-width: 1024px) {
+    .footer-contact-info-wrap {
+      margin-bottom: 1.875em; } }
+
+.footer-contact-text,
+.footer-menu-link,
+.footer-copyright-label {
+  color: #8f9296;
+  font-family: Raleway, sans-serif;
+  font-weight: 300;
+  margin: 0;
+  font-size: 1em;
+  text-align: center; }
+  @media (min-width: 1024px) {
+    .footer-contact-text,
+    .footer-menu-link,
+    .footer-copyright-label {
+      text-align: left; } }
+
+.contact-last-wrap {
+  margin-bottom: 1.375em; }
+
+.footer-menu-link {
+  margin-bottom: 1em; }
+  @media (min-width: 1024px) {
+    .footer-menu-link {
+      margin-bottom: 1em; } }
+  .footer-menu-link a {
+    text-decoration: none;
+    color: #8f9296; }
+    .footer-menu-link a:hover {
+      color: #ffffff; }
+
+.footer-menu-link-not-hover:hover {
+  color: #8f9296; }
+
+.footer-copyright-wrap {
+  width: 100%;
+  background: #191c1f;
+  padding-top: 1.125em;
+  padding-bottom: 1.63em; }
+  @media (min-width: 1024px) {
+    .footer-copyright-wrap {
+      padding-top: 1.125em;
+      padding-bottom: 1.63em; } }
+
+.footer-copyright-label {
+  font-size: .9em;
+  font-weight: 400;
+  text-align: center; }
+  @media (min-width: 1024px) {
+    .footer-copyright-label {
+      text-align: left;
+      padding-left: 3.8em;
+      font-size: 0.875em;
+      font-weight: 400; } }
+  @media (min-width: 1440px) {
+    .footer-copyright-label {
+      padding-left: 6em; } }
+  @media (min-width: 1920px) {
+    .footer-copyright-label {
+      padding-left: 22.5em; } }
+  @media (min-width: 2410px) {
+    .footer-copyright-label {
+      padding-left: 44.1875em; } }
+
+.contact-section-top-bg-wrap {
+  background-image: url("../img/contact/special-cars-header-kontakt.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 8.8em; }
+  @media (min-width: 640px) {
+    .contact-section-top-bg-wrap {
+      height: 14.8em; } }
+  @media (min-width: 1024px) {
+    .contact-section-top-bg-wrap {
+      height: 16.75em; } }
+  @media (min-width: 1440px) {
+    .contact-section-top-bg-wrap {
+      height: 28.75em; } }
+
+.contact-form-img,
+.buy-section-top-bg {
+  width: 100%;
+  height: 100%; }
+
+.contact-section,
+.service-page-section,
+.privacy-page-section,
+.impressum-page-section {
+  background: #25292e;
+  padding-top: 1.9375em; }
+  @media (min-width: 1024px) {
+    .contact-section,
+    .service-page-section,
+    .privacy-page-section,
+    .impressum-page-section {
+      padding-top: 2.9375em; } }
+
+.contact-section-title-wrap {
+  width: 17.1em; }
+  @media (min-width: 640px) {
+    .contact-section-title-wrap {
+      width: 32.1em; } }
+  @media (min-width: 768px) {
+    .contact-section-title-wrap {
+      width: 40.1em; } }
+  @media (min-width: 1024px) {
+    .contact-section-title-wrap {
+      width: 59.5em; } }
+  @media (min-width: 1440px) {
+    .contact-section-title-wrap {
+      width: 75.5em; } }
+
+.contact-form-wrap {
+  margin-bottom: 4.5625em;
+  margin-top: 1.3125em;
+  flex-direction: column; }
+  @media (min-width: 640px) {
+    .contact-form-wrap {
+      flex-direction: row;
+      align-items: flex-start; } }
+
+.contact-form-img-wrap {
+  width: 17.1em;
+  height: 21em;
+  margin-right: 0;
+  background-image: url("../img/contact/special-cars-kontakt.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media (min-width: 640px) {
+    .contact-form-img-wrap {
+      width: 15.1em;
+      height: 19em;
+      margin-right: 2em; } }
+  @media (min-width: 768px) {
+    .contact-form-img-wrap {
+      width: 17.1em;
+      height: 21em;
+      margin-right: 3em; } }
+  @media (min-width: 1024px) {
+    .contact-form-img-wrap {
+      width: 22.0625em;
+      height: 33em;
+      margin-right: 3.5em; } }
+
+.contact-form {
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 17.1em;
+  margin-top: 2em; }
+  @media (min-width: 640px) {
+    .contact-form {
+      margin-top: 0;
+      width: 15.1em; } }
+  @media (min-width: 768px) {
+    .contact-form {
+      width: 20.1em; } }
+  @media (min-width: 1024px) {
+    .contact-form {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 34em; } }
+  @media (min-width: 1440px) {
+    .contact-form {
+      width: 50.125em; } }
+
+.contact-info-field-wrap {
+  width: 100%;
+  margin-bottom: 1.375em; }
+  @media (min-width: 1024px) {
+    .contact-info-field-wrap {
+      width: 15.125em;
+      margin-right: 1.875em;
+      margin-bottom: 2.375em; } }
+  @media (min-width: 1440px) {
+    .contact-info-field-wrap {
+      width: 23.125em; } }
+
+.contact-field,
+.contact-message {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 1em; }
+
+.contact-field {
+  padding-bottom: 1.125em; }
+
+.contact-info-message-wrap {
+  width: 100%;
+  height: 9.4em;
+  margin-bottom: 2.375em; }
+  @media (min-width: 1440px) {
+    .contact-info-message-wrap {
+      width: 48.125em;
+      height: 11.4em; } }
+
+.contact-message {
+  resize: none; }
+
+.contact-form-text {
+  color: #ffffff;
+  font-family: Raleway, sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  margin-bottom: 2.9375em;
+  margin-top: 0;
+  width: 100%;
+  line-height: 2; }
+
+.text-underline {
+  text-decoration: underline; }
+
+.address-section {
+  background: #25292e;
+  padding-bottom: 4.0625em; }
+
+.address-section-info-wrap {
+  width: 17.1em; }
+  @media (min-width: 640px) {
+    .address-section-info-wrap {
+      width: 32.1em; } }
+  @media (min-width: 768px) {
+    .address-section-info-wrap {
+      width: 40.1em; } }
+  @media (min-width: 1024px) {
+    .address-section-info-wrap {
+      width: 59.4375em; } }
+  @media (min-width: 1440px) {
+    .address-section-info-wrap {
+      width: 75.4375em; } }
+
+.address-info-wrap {
+  margin-top: 2.8125em;
+  flex-direction: column;
+  width: 100%; }
+  @media (min-width: 640px) {
+    .address-info-wrap {
+      flex-direction: row; } }
+
+.address-contact-text {
+  color: #ffffff;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 1.125em;
+  margin: 0;
+  text-align: center; }
+  @media (min-width: 640px) {
+    .address-contact-text {
+      font-size: .9em; } }
+  @media (min-width: 1024px) {
+    .address-contact-text {
+      font-size: 1.125em;
+      text-align: left; } }
+
+.address-info-vertical-line {
+  width: 2.625em;
+  height: 1px;
+  background: #8f9296;
+  margin-top: 2em;
+  margin-bottom: 2em; }
+  @media (min-width: 640px) {
+    .address-info-vertical-line {
+      width: 1px;
+      height: 2.625em;
+      margin: 0 1em; } }
+  @media (min-width: 1024px) {
+    .address-info-vertical-line {
+      margin: 0; } }
+
+.address-contact-info-wrap-1 {
+  margin-right: 0; }
+  @media (min-width: 1024px) {
+    .address-contact-info-wrap-1 {
+      margin-right: 3em; } }
+  @media (min-width: 1440px) {
+    .address-contact-info-wrap-1 {
+      margin-right: 6em; } }
+
+.address-contact-info-wrap-2 {
+  margin: 0; }
+  @media (min-width: 1024px) {
+    .address-contact-info-wrap-2 {
+      margin: 0 3.5625em; } }
+  @media (min-width: 1440px) {
+    .address-contact-info-wrap-2 {
+      margin: 0 4.5625em; } }
+
+.address-contact-info-wrap-3 {
+  margin: 0; }
+  @media (min-width: 1024px) {
+    .address-contact-info-wrap-3 {
+      margin: 0 3.375em; } }
+  @media (min-width: 1440px) {
+    .address-contact-info-wrap-3 {
+      margin: 0 6.375em; } }
+
+.address-contact-info-wrap-4 {
+  margin-left: 0; }
+  @media (min-width: 1024px) {
+    .address-contact-info-wrap-4 {
+      margin-left: 2.875em; } }
+  @media (min-width: 1440px) {
+    .address-contact-info-wrap-4 {
+      margin-left: 3.875em; } }
+
+.contact-section-map {
+  width: 100%;
+  height: 28.875em;
+  background: rgba(37, 41, 46, 0.8); }
+  @media (min-width: 640px) {
+    .contact-section-map {
+      height: 22.875em; } }
+  @media (min-width: 1440px) {
+    .contact-section-map {
+      height: 33.875em; } }
+
+.buy-section {
+  background: #25292e;
+  padding-top: 3.4375em;
+  padding-bottom: 6.5625em; }
+
+.buy-section-top-bg-wrap {
+  background-image: url("../img/buy/special-cars-header-fahrzeuge.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20.8em; }
+  @media (min-width: 640px) {
+    .buy-section-top-bg-wrap {
+      height: 14.8em; } }
+  @media (min-width: 1024px) {
+    .buy-section-top-bg-wrap {
+      height: 16.75em; } }
+  @media (min-width: 1440px) {
+    .buy-section-top-bg-wrap {
+      height: 28.75em; } }
+
+.buy-section-title-wrap {
+  width: 17.1em; }
+  @media (min-width: 640px) {
+    .buy-section-title-wrap {
+      width: 32.1em; } }
+  @media (min-width: 768px) {
+    .buy-section-title-wrap {
+      width: 40.1em; } }
+  @media (min-width: 1024px) {
+    .buy-section-title-wrap {
+      width: 59.5em; } }
+  @media (min-width: 1440px) {
+    .buy-section-title-wrap {
+      width: 73em; } }
+
+.buy-section-info-wrap {
+  margin-bottom: 0; }
+
+.buy-section-cards-wrap {
+  width: 100%;
+  align-items: center; }
+  @media (min-width: 1024px) {
+    .buy-section-cards-wrap {
+      width: 60em; } }
+  @media (min-width: 1440px) {
+    .buy-section-cards-wrap {
+      width: 75em; } }
+
+.buy-section-card {
+  background: #2a2f34;
+  margin-bottom: 1em; }
+  @media (min-width: 1024px) {
+    .buy-section-card {
+      margin: 0.5em; } }
+  @media (min-width: 1440px) {
+    .buy-section-card {
+      margin: 0.9375em; } }
+
+.buy-section-card-bg-image-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 17.25em;
+  background-image: url("../img/buy/special-cars-fahrzeuge-platzhalter.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media (min-width: 640px) {
+    .buy-section-card-bg-image-wrap {
+      height: 21.25em; } }
+  @media (min-width: 1440px) {
+    .buy-section-card-bg-image-wrap {
+      height: 25.3125em; } }
+
+@media (min-width: 1440px) {
+  .buy-card-title {
+    font-size: 1.8em; } }
+
+.news-page-top-bg-wrap {
+  background-image: url("../img/news/special-cars-header-news.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 8.8em; }
+  @media (min-width: 640px) {
+    .news-page-top-bg-wrap {
+      height: 14.8em; } }
+  @media (min-width: 1024px) {
+    .news-page-top-bg-wrap {
+      height: 16.75em; } }
+  @media (min-width: 1440px) {
+    .news-page-top-bg-wrap {
+      height: 28.75em; } }
+
+.news-section,
+.service-text-info-section,
+.about-page-history-section {
+  background: #25292e;
+  padding-top: 1.9375em; }
+  @media (min-width: 1024px) {
+    .news-section,
+    .service-text-info-section,
+    .about-page-history-section {
+      padding-top: 2.9375em;
+      padding-bottom: 4.0625em; } }
+
+.news-section-title-wrap,
+.service-text-info-wrap,
+.about-info-title-wrap,
+.about-page-history-info-wrap {
+  width: 17.1em; }
+  @media (min-width: 640px) {
+    .news-section-title-wrap,
+    .service-text-info-wrap,
+    .about-info-title-wrap,
+    .about-page-history-info-wrap {
+      width: 32.1em; } }
+  @media (min-width: 768px) {
+    .news-section-title-wrap,
+    .service-text-info-wrap,
+    .about-info-title-wrap,
+    .about-page-history-info-wrap {
+      width: 40.1em; } }
+  @media (min-width: 1024px) {
+    .news-section-title-wrap,
+    .service-text-info-wrap,
+    .about-info-title-wrap,
+    .about-page-history-info-wrap {
+      width: 57.75em; } }
+  @media (min-width: 1440px) {
+    .news-section-title-wrap,
+    .service-text-info-wrap,
+    .about-info-title-wrap,
+    .about-page-history-info-wrap {
+      width: 73.8em; } }
+
+.news-list-wrap {
+  background: #25292e;
+  padding-top: 2.0625em; }
+
+.news-list-item {
+  flex-direction: column;
+  width: 17.1em; }
+  @media (min-width: 640px) {
+    .news-list-item {
+      width: 32.1em; } }
+  @media (min-width: 768px) {
+    .news-list-item {
+      width: 40.1em; } }
+  @media (min-width: 1024px) {
+    .news-list-item {
+      width: auto;
+      flex-direction: row; } }
+
+.news-list-item-img-wrap {
+  width: 100%;
+  height: 11.625em;
+  margin-bottom: 2em; }
+  @media (min-width: 640px) {
+    .news-list-item-img-wrap {
+      height: 20.625em; } }
+  @media (min-width: 768px) {
+    .news-list-item-img-wrap {
+      height: 25.625em; } }
+  @media (min-width: 1024px) {
+    .news-list-item-img-wrap {
+      margin-right: 1.875em;
+      width: 25.375em;
+      height: 15.625em; } }
+  @media (min-width: 1440px) {
+    .news-list-item-img-wrap {
+      width: 29.375em;
+      height: 19.625em; } }
+
+.news-list-item-first-img {
+  background-image: url("../img/news/special-cars-news-platzhalter-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.news-list-item-second-img {
+  background-image: url("../img/news/special-cars-news-platzhalter-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.news-list-item-info-wrap,
+.reference-item-info-wrap {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 1.6875em;
+  align-items: flex-start;
+  width: 100%; }
+  @media (min-width: 1024px) {
+    .news-list-item-info-wrap,
+    .reference-item-info-wrap {
+      width: 30.5em; } }
+  @media (min-width: 1440px) {
+    .news-list-item-info-wrap,
+    .reference-item-info-wrap {
+      width: 42.5em; } }
+
+.news-item-date-wrap {
+  background: #202328;
+  padding-top: 0.625em;
+  padding-bottom: 0.625em;
+  width: 100%; }
+
+.news-item-date {
+  margin: 0;
+  color: #c19846;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  padding-left: 0.9375em; }
+
+.news-item-title {
+  color: #ffffff;
+  font-family: Blinker, sans-serif;
+  font-size: 1.75em;
+  font-weight: 200;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  margin-left: 0.54em; }
+
+.news-item-text {
+  margin-left: 0.9375em; }
+
+.news-item-info-images-wrap {
+  margin-top: 2.8125em;
+  margin-bottom: 2.1875em;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly; }
+  @media (min-width: 768px) {
+    .news-item-info-images-wrap {
+      justify-content: space-between; } }
+  @media (min-width: 1024px) {
+    .news-item-info-images-wrap {
+      align-items: flex-start;
+      width: 30.5em; } }
+  @media (min-width: 1440px) {
+    .news-item-info-images-wrap {
+      width: 41.75em; } }
+
+.news-item-info-img-wrap {
+  width: 12.5em;
+  height: 8.6875em;
+  margin-bottom: 1em; }
+  @media (min-width: 1024px) {
+    .news-item-info-img-wrap {
+      margin-bottom: 0;
+      width: 9.5em;
+      height: 6.6875em; } }
+  @media (min-width: 1440px) {
+    .news-item-info-img-wrap {
+      width: 13em;
+      height: 8.6875em; } }
+
+.news-item-info-show-less-btn,
+.news-item-info-show-more-btn {
+  color: #ffffff;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  margin-left: .75em;
+  cursor: pointer; }
+
+.news-item-info-show-more-btn {
+  margin-top: 2em; }
+
+.references-item-title,
+.service-section-subtitle {
+  color: #ffffff;
+  font-family: Blinker, sans-serif;
+  font-size: 1.2em;
+  font-weight: 200;
+  margin-top: 0;
+  margin-bottom: 1.25em; }
+  @media (min-width: 640px) {
+    .references-item-title,
+    .service-section-subtitle {
+      font-size: 1.6em; } }
+  @media (min-width: 640px) {
+    .references-item-title,
+    .service-section-subtitle {
+      font-size: 1.5em; } }
+  @media (min-width: 1440px) {
+    .references-item-title,
+    .service-section-subtitle {
+      font-size: 1.75em; } }
+
+@media (min-width: 1440px) {
+  .references-item-title {
+    font-size: 2.125em;
+    margin-bottom: .7em; } }
+
+.references-item-text {
+  font-family: Blinker, sans-serif;
+  font-weight: bold;
+  font-size: 1.0625em;
+  color: #ffffff; }
+
+.references-page-list-img {
+  background-image: url("../img/references/special-cars-referenzen-platzhalter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.reference-item-info-wrap {
+  margin-bottom: 3em; }
+  @media (min-width: 1024px) {
+    .reference-item-info-wrap {
+      padding-bottom: 6.9em; } }
+  @media (min-width: 1440px) {
+    .reference-item-info-wrap {
+      padding-bottom: 8.1em; } }
+
+.service-section-underline {
+  width: 1.25rem;
+  height: 2px;
+  background: #c19846;
+  margin-top: 1.1875em;
+  margin-bottom: 0.6875em; }
+  @media (min-width: 1024px) {
+    .service-section-underline {
+      margin-top: 1.25em;
+      margin-bottom: 1.25em; } }
+
+.service-section-subtitle,
+.service-section-info-subtitle {
+  color: #ffffff;
+  font-family: Blinker, sans-serif;
+  font-size: 1.2em;
+  font-weight: 200;
+  margin-top: 0.625em;
+  margin-bottom: 1.25em; }
+  @media (min-width: 640px) {
+    .service-section-subtitle,
+    .service-section-info-subtitle {
+      font-size: 1.6em; } }
+  @media (min-width: 640px) {
+    .service-section-subtitle,
+    .service-section-info-subtitle {
+      font-size: 1.5em; } }
+  @media (min-width: 1440px) {
+    .service-section-subtitle,
+    .service-section-info-subtitle {
+      font-size: 1.75em; } }
+
+.service-section-info-subtitle {
+  margin-top: 1.25em; }
+
+.service-section-info-wrap {
+  margin-bottom: 6.25em;
+  align-items: flex-start; }
+  @media (min-width: 1440px) {
+    .service-section-info-wrap {
+      width: 71.6em; } }
+
+.service-info-img-wrap,
+.about-info-img-wrap {
+  width: 100%;
+  height: 11.625em;
+  margin-bottom: 2em;
+  z-index: 10; }
+  @media (min-width: 640px) {
+    .service-info-img-wrap,
+    .about-info-img-wrap {
+      height: 20.625em; } }
+  @media (min-width: 768px) {
+    .service-info-img-wrap,
+    .about-info-img-wrap {
+      height: 25.625em; } }
+  @media (min-width: 1024px) {
+    .service-info-img-wrap,
+    .about-info-img-wrap {
+      margin-bottom: 0;
+      margin-right: 1.875em;
+      width: 25.375em;
+      height: 15.625em; } }
+  @media (min-width: 1440px) {
+    .service-info-img-wrap,
+    .about-info-img-wrap {
+      width: 29.375em;
+      height: 24.625em; } }
+
+.service-transport-info-wrap,
+.about-section-text-wrap {
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 2em; }
+  @media (min-width: 1024px) {
+    .service-transport-info-wrap,
+    .about-section-text-wrap {
+      width: 30.5em;
+      margin-bottom: 4em; } }
+  @media (min-width: 1440px) {
+    .service-transport-info-wrap,
+    .about-section-text-wrap {
+      margin-bottom: 0;
+      width: 40.32em; } }
+
+.service-info-img-wrap {
+  background-image: url("../img/service/special-cars-service-verschiffung.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.service-section-middle-bg-wrap {
+  background-image: url("../img/service/special-cars-service-hintergrund.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 6.8em; }
+  @media (min-width: 640px) {
+    .service-section-middle-bg-wrap {
+      height: 13.8em; } }
+  @media (min-width: 1024px) {
+    .service-section-middle-bg-wrap {
+      margin-top: 0;
+      height: 15.75em; } }
+  @media (min-width: 1440px) {
+    .service-section-middle-bg-wrap {
+      height: 18.0625em;
+      margin-top: -4.8em; } }
+  @media (min-width: 1920px) {
+    .service-section-middle-bg-wrap {
+      height: 23.0625em;
+      margin-top: -6.25em; } }
+
+@media (min-width: 1024px) {
+  .service-text-info-section {
+    padding-top: 5.375em;
+    padding-bottom: 5.5em; } }
+
+.service-text-info-wrap {
+  padding-bottom: 2.5em; }
+  @media (min-width: 1440px) {
+    .service-text-info-wrap {
+      width: 70.32em; } }
+
+.about-page-top-bg-wrap {
+  height: 5.8em;
+  width: 100%;
+  background-image: url("../img/about/special-cars-header-ueber-uns.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media (min-width: 640px) {
+    .about-page-top-bg-wrap {
+      height: 12.8em; } }
+  @media (min-width: 1024px) {
+    .about-page-top-bg-wrap {
+      height: 16.75em; } }
+  @media (min-width: 1440px) {
+    .about-page-top-bg-wrap {
+      height: 23.75em; } }
+  @media (min-width: 2410px) {
+    .about-page-top-bg-wrap {
+      height: 28.75em; } }
+
+.about-page-history-section {
+  background: #25292e;
+  padding-top: 1.9375em; }
+  @media (min-width: 1024px) {
+    .about-page-history-section {
+      padding-top: 5.3em;
+      padding-bottom: 4.38em; } }
+
+@media (min-width: 1440px) {
+  .about-info-title-wrap {
+    width: 72.9em; } }
+
+.about-info-wrap {
+  flex-direction: column;
+  width: 17.1em; }
+  @media (min-width: 640px) {
+    .about-info-wrap {
+      width: 32.1em; } }
+  @media (min-width: 768px) {
+    .about-info-wrap {
+      width: 40.1em; } }
+  @media (min-width: 1024px) {
+    .about-info-wrap {
+      width: auto;
+      flex-direction: row;
+      margin-top: 2.8125em; } }
+
+@media (min-width: 1440px) {
+  .about-section-text-wrap {
+    width: 41.63em; } }
+
+@media (min-width: 1440px) {
+  .about-page-author-title {
+    font-size: 2.22em;
+    line-height: 1.5; } }
+
+.about-page-author-label {
+  font-size: 1em;
+  margin-bottom: 2.31em; }
+
+.about-info-text {
+  margin-bottom: 2.375em; }
+
+.about-info-img-wrap {
+  background-image: url("../img/about/special-cars-ueber-uns-platzhalter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media (min-width: 1440px) {
+    .about-info-img-wrap {
+      height: 31.0625em; } }
+
+.about-page-middle-bg-wrap {
+  width: 100%;
+  height: 6.8em;
+  background: #25292e;
+  background-image: url("../img/about/special-cars-ueber-uns-hintergrund.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media (min-width: 640px) {
+    .about-page-middle-bg-wrap {
+      height: 13.8em; } }
+  @media (min-width: 1024px) {
+    .about-page-middle-bg-wrap {
+      margin-top: -2em;
+      height: 15.75em; } }
+  @media (min-width: 1440px) {
+    .about-page-middle-bg-wrap {
+      height: 23.0625em; } }
+  @media (min-width: 1920px) {
+    .about-page-middle-bg-wrap {
+      height: 34.5em; } }
+
+.about-video-bg-wrap {
+  background: #565e68;
+  width: 100%;
+  height: 11.625em;
+  margin-bottom: 2em;
+  z-index: 10; }
+  @media (min-width: 640px) {
+    .about-video-bg-wrap {
+      height: 20.625em; } }
+  @media (min-width: 768px) {
+    .about-video-bg-wrap {
+      height: 25.625em; } }
+  @media (min-width: 1024px) {
+    .about-video-bg-wrap {
+      margin-bottom: 0;
+      margin-right: 2.38em;
+      width: 34.875em;
+      height: 15.25em; } }
+  @media (min-width: 1440px) {
+    .about-video-bg-wrap {
+      width: 34.875em;
+      height: 23.25em; } }
+
+.about-video-btn-wrap {
+  width: 3.6875em;
+  height: 2.9375em;
+  cursor: pointer; }
+
+.about-history-date {
+  color: #c19846;
+  font-family: Blinker, sans-serif;
+  font-size: 1.75em;
+  font-weight: 200;
+  margin-top: 0;
+  margin-bottom: .9em;
+  line-height: 1; }
+
+.about-history-info-subtitle {
+  color: #ffffff;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  margin-bottom: 1.2em;
+  margin-top: 0; }
+
+.info-dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  background-color: #c19846;
+  border-radius: 100%;
+  margin-right: 0.8125em;
+  margin-top: 0.6em; }
+
+.about-history-text-wrap {
+  width: 100%; }
+  @media (min-width: 1024px) {
+    .about-history-text-wrap {
+      width: 31.625em; } }
+
+@media (min-width: 1440px) {
+  .about-page-history-info-wrap {
+    width: 70.8em; } }
+
+.privacy-page-section {
+  padding-top: 1.9375em; }
+  @media (min-width: 1024px) {
+    .privacy-page-section {
+      padding-top: 5.375em; } }
+  @media (min-width: 1440px) {
+    .privacy-page-section {
+      padding-top: 9.375em; } }
+
+.privacy-page-info-wrap {
+  margin-bottom: 2.75em;
+  align-items: flex-start;
+  word-break: break-word; }
+  @media (min-width: 1440px) {
+    .privacy-page-info-wrap {
+      width: 73em; } }
+
+.privacy-text-title {
+  color: #c19846;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: 0; }
+
+.privacy-section-text {
+  margin-bottom: 2em;
+  line-height: 1.8; }
+
+.privacy-section-last-text {
+  margin-bottom: 0; }
+
+.privacy-section-last-paragraph {
+  margin-bottom: 1em; }
+
+.impressum-page-section {
+  padding-top: 1.9375em;
+  padding-bottom: 0.8125em; }
+  @media (min-width: 1024px) {
+    .impressum-page-section {
+      padding-top: 4.6875em; } }
+
+.impressum-page-top-bg-wrap {
+  background-image: url("../img/service/special-cars-header-service.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 8.8em; }
+  @media (min-width: 640px) {
+    .impressum-page-top-bg-wrap {
+      height: 14.8em; } }
+  @media (min-width: 1024px) {
+    .impressum-page-top-bg-wrap {
+      height: 16.75em; } }
+  @media (min-width: 1440px) {
+    .impressum-page-top-bg-wrap {
+      height: 28.75em; } }
+
+.into-page-bg-wrap {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: auto; }
+
+.intro-page-bg {
+  width: 100%;
+  height: 100%; }
+
+.buy-car-popup-wrap,
+.buy-car-modal-wrap {
+  width: 100%;
+  height: 100%;
+  background: rgba(37, 41, 46, 0.95);
+  position: fixed;
+  z-index: 1000;
+  transition: all .4s ease-in-out;
+  visibility: hidden;
+  opacity: 0; }
+
+.buy-car-popup {
+  width: 16.5em;
+  height: auto;
+  padding: 2.0625em 1.375em 1.5em 2.125em;
+  background-image: url("../img/home/buy-car-popup-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  @media (min-width: 1024px) {
+    .buy-car-popup {
+      width: 48.4em;
+      padding: 3.0625em 4.375em 2.5em 4.125em; } }
+
+.buy-car-popup-title {
+  color: #ffffff;
+  font-family: Blinker, sans-serif;
+  font-weight: 200;
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 0; }
+  @media (min-width: 1024px) {
+    .buy-car-popup-title {
+      font-size: 2em; } }
+  @media (min-width: 1440px) {
+    .buy-car-popup-title {
+      font-size: 2.625em; } }
+
+.buy-car-popup-form-wrap {
+  margin-top: 0;
+  margin-bottom: 0; }
+  @media (min-width: 1024px) {
+    .buy-car-popup-form-wrap {
+      margin-top: 1.75em; } }
+
+.buy-car-popup-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: .7em; }
+  @media (min-width: 1024px) {
+    .buy-car-popup-text {
+      font-size: .9em;
+      line-height: 2; } }
+  @media (min-width: 1440px) {
+    .buy-car-popup-text {
+      font-size: 1em;
+      margin-top: 1.9em; } }
+
+.buy-car-popup-form {
+  width: 100%;
+  margin-top: 1em; }
+  @media (min-width: 1024px) {
+    .buy-car-popup-form {
+      justify-content: space-between; } }
+
+.buy-car-popup-form-field-wrap {
+  width: 100%;
+  margin-bottom: 1em; }
+  @media (min-width: 1024px) {
+    .buy-car-popup-form-field-wrap {
+      width: 23.125em;
+      margin-bottom: 2.375em;
+      margin-right: 0; } }
+
+.buy-car-popup-form-message-wrap {
+  width: 100%;
+  height: 3.4em;
+  margin-bottom: 1em; }
+  @media (min-width: 1024px) {
+    .buy-car-popup-form-message-wrap {
+      height: 9.4em;
+      margin-bottom: 2.375em; } }
+  @media (min-width: 1440px) {
+    .buy-car-popup-form-message-wrap {
+      width: 48.125em;
+      height: 11.4em; } }
+
+.buy-car-popup-form-field {
+  padding-bottom: .5em;
+  font-size: .7em; }
+  @media (min-width: 1024px) {
+    .buy-car-popup-form-field {
+      padding-bottom: 1.125em;
+      font-size: 1em; } }
+
+.buy-car-popup-form-message {
+  font-size: .7em; }
+  @media (min-width: 1024px) {
+    .buy-car-popup-form-message {
+      font-size: 1em; } }
+
+.buy-car-popup-form-text {
+  margin-bottom: .5em;
+  font-size: .7em; }
+  @media (min-width: 1024px) {
+    .buy-car-popup-form-text {
+      font-size: 1em;
+      margin-bottom: 1.7em; } }
+
+.popup-close-btn,
+.modal-close-btn {
+  z-index: 1500;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5em;
+  background: #c19846;
+  cursor: pointer; }
+  .popup-close-btn:hover,
+  .modal-close-btn:hover {
+    background: #ad8028; }
+  @media (min-width: 1024px) {
+    .popup-close-btn,
+    .modal-close-btn {
+      padding: 0.815em;
+      padding-bottom: 0.627em; } }
+
+.popup-close-btn-img {
+  width: 100%;
+  height: 100%; }
+
+.popup-close-btn-img-wrap {
+  width: 1em;
+  height: 1em; }
+  @media (min-width: 1024px) {
+    .popup-close-btn-img-wrap {
+      width: auto;
+      height: auto; } }
+
+.popup-opened {
+  visibility: visible;
+  opacity: 1; }
+
+.buy-car-modal-wrap {
+  background: rgba(24, 26, 27, 0.9);
+  position: absolute;
+  height: 461vh; }
+  @media (min-width: 640px) {
+    .buy-car-modal-wrap {
+      height: 260vh; } }
+  @media (min-width: 1024px) {
+    .buy-car-modal-wrap {
+      height: 100%;
+      position: fixed; } }
+
+.buy-car-modal {
+  background: #25292e;
+  position: absolute;
+  top: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 20em; }
+  @media (min-width: 640px) {
+    .buy-car-modal {
+      width: 40em; } }
+  @media (min-width: 1024px) {
+    .buy-car-modal {
+      flex-direction: row;
+      width: 64em;
+      height: 45.5em;
+      top: unset; } }
+  @media (min-width: 1440px) {
+    .buy-car-modal {
+      width: 90em;
+      height: 44.5em; } }
+  @media (min-width: 1920px) {
+    .buy-car-modal {
+      width: 104.4375em;
+      height: 51.875em; } }
+  @media (min-width: 2410px) {
+    .buy-car-modal {
+      width: 124.4375em; } }
+
+.buy-car-modal-slider {
+  width: 20em !important;
+  height: 12.875em; }
+  @media (min-width: 640px) {
+    .buy-car-modal-slider {
+      height: 25.875em;
+      width: 40em !important; } }
+  @media (min-width: 1024px) {
+    .buy-car-modal-slider {
+      width: 33.5em !important;
+      height: 25.875em; } }
+  @media (min-width: 1440px) {
+    .buy-car-modal-slider {
+      width: 50.5em !important;
+      height: 44.5em; } }
+  @media (min-width: 1920px) {
+    .buy-car-modal-slider {
+      width: 65em !important; } }
+  @media (min-width: 2410px) {
+    .buy-car-modal-slider {
+      width: 77.75em !important;
+      height: 51.875em; } }
+  .buy-car-modal-slider .buy-car-modal-slide {
+    height: 12.875em;
+    width: 20em;
+    background-image: url("../img/popup_buy/special-cars-fahrzeug-platzhalter.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+    @media (min-width: 640px) {
+      .buy-car-modal-slider .buy-car-modal-slide {
+        height: 25.875em;
+        width: 40em; } }
+    @media (min-width: 1024px) {
+      .buy-car-modal-slider .buy-car-modal-slide {
+        height: 25.875em;
+        width: 33.5em; } }
+    @media (min-width: 1440px) {
+      .buy-car-modal-slider .buy-car-modal-slide {
+        height: 44.5em;
+        width: 50.5em; } }
+    @media (min-width: 1920px) {
+      .buy-car-modal-slider .buy-car-modal-slide {
+        width: 65em; } }
+    @media (min-width: 1920px) {
+      .buy-car-modal-slider .buy-car-modal-slide {
+        height: 51.875em;
+        width: 100%; } }
+  .buy-car-modal-slider .owl-dots {
+    counter-reset: slides-num;
+    position: absolute;
+    top: 85.5%;
+    left: 43%; }
+    @media (min-width: 640px) {
+      .buy-car-modal-slider .owl-dots {
+        top: 90.5%;
+        left: 47%; } }
+    @media (min-width: 1024px) {
+      .buy-car-modal-slider .owl-dots {
+        top: 90%; } }
+    @media (min-width: 1440px) {
+      .buy-car-modal-slider .owl-dots {
+        top: 110.5%; } }
+    .buy-car-modal-slider .owl-dots:after {
+      content: counter(slides-num);
+      display: inline-block;
+      font-size: 1.5em;
+      font-family: Blinker, sans-serif;
+      font-weight: 400;
+      color: #ffffff;
+      padding-left: .4em; }
+
+@-moz-document url-prefix() {
+  .buy-car-modal-slider .owl-dots:after {
+    padding-left: 0;
+    margin-left: -11px; } }
+  .buy-car-modal-slider .owl-dot {
+    display: inline-block;
+    counter-increment: slides-num;
+    margin-right: -9px;
+    background: none;
+    border: none; }
+    .buy-car-modal-slider .owl-dot span {
+      display: none; }
+    .buy-car-modal-slider .owl-dot.active:before {
+      content: counter(slides-num) " / ";
+      display: inline-block;
+      font-family: Blinker, sans-serif;
+      font-weight: 400;
+      font-size: 1.7em;
+      color: #ffffff;
+      position: absolute;
+      left: 0;
+      top: 0; }
+  .buy-car-modal-slider .nav-btn {
+    color: #ffffff;
+    font-family: Blinker, sans-serif;
+    font-size: 1.6875em;
+    font-weight: 400; }
+  .buy-car-modal-slider .owl-nav button {
+    position: absolute;
+    z-index: 150;
+    margin: 0;
+    border: none;
+    background: none;
+    color: #ffffff;
+    font-family: Blinker, sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 0.34em 0.68em;
+    top: 5.5em;
+    background: #c19846; }
+    @media (min-width: 640px) {
+      .buy-car-modal-slider .owl-nav button {
+        top: 11em; } }
+    @media (min-width: 1024px) {
+      .buy-car-modal-slider .owl-nav button {
+        font-size: 1.6875em;
+        top: 6.5em; } }
+    @media (min-width: 1440px) {
+      .buy-car-modal-slider .owl-nav button {
+        top: 12em; } }
+    @media (min-width: 1920px) {
+      .buy-car-modal-slider .owl-nav button {
+        top: 13.5em; } }
+  .buy-car-modal-slider .owl-nav button.owl-prev {
+    left: 0;
+    outline: none; }
+  .buy-car-modal-slider .owl-nav button.owl-next {
+    right: 0;
+    outline: none; }
+
+.buy-car-modal-info-wrap {
+  padding: 1.25em .5em 2.375em; }
+  @media (min-width: 640px) {
+    .buy-car-modal-info-wrap {
+      padding: 1.25em 1.5em 2.375em; } }
+  @media (min-width: 1024px) {
+    .buy-car-modal-info-wrap {
+      padding: 2.25em 3.4375em 2.375em 3.0625em; } }
+
+.buy-car-modal-subtitle {
+  color: #ffffff;
+  font-family: Blinker, sans-serif;
+  font-weight: 300;
+  line-height: .9; }
+  @media (min-width: 1440px) {
+    .buy-car-modal-subtitle {
+      font-size: 2em;
+      margin-top: 0; } }
+  @media (min-width: 1920px) {
+    .buy-car-modal-subtitle {
+      font-size: 2.3125em;
+      margin-top: .65em; } }
+
+.buy-car-modal-info-icon-wrap {
+  margin-right: .5em;
+  width: 1.625em; }
+  @media (min-width: 1024px) {
+    .buy-car-modal-info-icon-wrap {
+      margin-right: 2.4375em; } }
+
+.buy-car-modal-info {
+  margin-bottom: 0.875em; }
+
+.buy-car-modal-info-line {
+  padding-bottom: 0.9375em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%; }
+  @media (min-width: 1440px) {
+    .buy-car-modal-info-line {
+      width: 28.8em; } }
+  @media (min-width: 2410px) {
+    .buy-car-modal-info-line {
+      width: 35.5625em; } }
+
+.last-info-line {
+  border-bottom: none;
+  padding-bottom: 0; }
+
+.last-line {
+  padding-top: .25em; }
+
+.buy-car-modal-info-title,
+.buy-car-modal-info-text,
+.buy-car-description-title,
+.buy-car-description-text {
+  color: #ffffff;
+  font-family: Blinker, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0; }
+
+.buy-car-modal-info-title {
+  width: 11.25em; }
+
+.buy-car-description-title {
+  font-weight: bold; }
+  @media (min-width: 1440px) {
+    .buy-car-description-title {
+      margin-top: 1.5em; } }
+  @media (min-width: 1920px) {
+    .buy-car-description-title {
+      margin-top: 4.5em; } }
+
+.buy-car-description-text {
+  margin-bottom: 1em;
+  line-height: 1.3;
+  font-weight: 300; }
+  @media (min-width: 1440px) {
+    .buy-car-description-text {
+      margin-bottom: 1.3em; } }
+  @media (min-width: 1920px) {
+    .buy-car-description-text {
+      margin-bottom: 4.5em; } }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block !important; }
+
+.accordion-panel {
+  display: none; }
